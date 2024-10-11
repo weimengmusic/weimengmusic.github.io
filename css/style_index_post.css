@@ -1,0 +1,129 @@
+/* 整體文章區域 */
+.posts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 自适应列数 */
+  gap: 20px; /* 文章之间的间距 */
+}
+
+/* 每篇文章的樣式 */
+.index_post {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 鼠標懸停效果 */
+.index_post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* 標題樣式 */
+.index_post h2 {
+  font-size: 1.5em;
+  color: #d04d41;
+  text-decoration: none;
+  transition: color 0.1s ease;  
+  text-align: center;
+  background: linear-gradient(to right, #fffdfc, #fffaf1); /* 柔和的奶油色漸層 */
+}
+
+.index_post h2:hover {
+  color: #e64a19;
+  background-color: rgb(253, 252, 238);
+  cursor: pointer;
+  background: linear-gradient(to right, #fffefc, #fdf4e6); /* 柔和的奶油色漸層 */
+}
+
+/* 文章信息區 */
+.index_post p {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.index_post .post-date, .index_post .post-author {
+  font-style: italic;
+  color: #666;
+}
+
+/* 摘要區 */
+.index_post .excerpt {
+  color: #555;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.index_post .excerpt:hover{
+  color: #000000;
+  background: linear-gradient(to top right, #fffffa, #feffed); 
+}
+
+/* 讀更多連結 */
+.index_post .read-more {
+  display: block;
+  text-align: center;
+  font-size: 1em;
+  color: #3773ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.index_post .read-more:hover {
+  text-decoration: underline;
+  background-color: antiquewhite;
+}
+
+
+
+/* post-count 樣式 */
+.post-count {
+  color: #fffee5; /* 設定字體顏色 */
+  text-align: center; /* 文字置中 */
+}
+
+
+.post-tags,
+.post-categories {
+  display: flex;
+  flex-wrap: wrap; /* 允許換行 */
+  margin: 10px 0; /* 加一些外邊距 */
+}
+
+.post-tags ul {
+  display: flex; /* 使用 flexbox */
+  flex-wrap: wrap; /* 允許換行 */
+  padding: 0; /* 去掉預設內邊距 */
+  margin: 0; /* 去掉預設外邊距 */
+}
+
+.post-tags span,
+.post-categories span {
+  margin-right: 5px; /* 標籤或類別名稱與項目之間的間距 */
+  font-weight: bold; /* 可以加粗字體 */
+}
+
+
+
+
+.hover-icon {
+  display: none; /* 默認隱藏圖片 */
+  position: absolute; /* 絕對定位 */
+  left: 66%; /* 讓圖片在標題右側顯示 */
+  top: 75%; /* 垂直居中 */
+  margin-left: 0%; /* 可根據需要調整間距 */
+  z-index: 1;
+}
+
+.title-link:hover .hover-icon {
+  display: block; /* 懸停時顯示圖片 */
+}
+
+.hover-icon img {
+  width: 100px; /* 根據需要設置圖片大小 */
+  height: auto; /* 保持比例 */
+}
+

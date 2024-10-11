@@ -1,0 +1,154 @@
+/* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0; /* 更改為淺灰色背景 */
+}
+
+/* 背景設定 */
+.post_bg, .archive_bg {
+  background-size: auto 23%; /* 設置背景圖片的大小 */
+  background-position: calc(100% - 10px) 5%; /* 調整背景圖片的位置 */
+  background-repeat: no-repeat; /* 不重複背景圖片 */
+  background-attachment: fixed; /* 使背景圖片固定 */
+}
+
+.archive_bg {
+  background-size: auto 90%; /* 設置背景圖片的大小 */
+  background-position: calc(100% - 10px) 100%; /* 調整背景圖片的位置 */
+  background-repeat: no-repeat; /* 不重複背景圖片 */
+  background-attachment: fixed; /* 使背景圖片固定 */
+}
+
+.posts-container{
+  background-position: right bottom; /* 針對 index 的背景圖片位置 */
+  background-repeat: no-repeat; /* 不重複背景圖片 */
+  background-size: auto 20%; /* 設置背景圖片的大小 */
+}
+
+
+
+
+
+.home-intro {
+  padding: 20px 10px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+.home-intro .home-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 確保圖片覆蓋容器 */
+  z-index: -1; /* 確保圖片在文字下方 */
+}
+
+.home-intro h2 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+  color: #ff83a6;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+  animation: textPulse 1.5s ease infinite;
+}
+
+@keyframes textPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.01); }
+}
+
+.welcome-desktop {
+  display: block; /* 預設為顯示 */
+}
+
+.welcome-mobile {
+  display: none; /* 預設為隱藏 */
+}
+
+
+
+/* 返回頂部按鈕樣式 */
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgb(255, 131, 131);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none; /* 默認隱藏按鈕 */
+  z-index: 1000; /* 確保按鈕在最上層 */
+  font-size: 26px;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-to-top-btn:hover {
+  background-color: #d8fdfd;
+}
+
+
+
+/* 游標所在位置添加可愛的特效 */
+.cursor-effect {
+  position: absolute;
+  width: 26px; /* 增加寬度 */
+  height: 26px; /* 增加高度 */
+  border-radius: 50%; /* 圓形 */
+  background: rgba(255, 105, 180, 0.4); /* 調整透明度，降低至 0.4 */
+  border: 2px solid rgba(255, 255, 255, 0.4); /* 調整邊框的透明度 */
+  box-shadow: 0 0 15px rgba(0, 191, 255, 0.5), 0 0 30px rgba(255, 105, 180, 0.5); /* 添加雙重陰影效果 */
+  pointer-events: none; /* 讓這個元素不會阻止滑鼠事件 */
+  transition: transform 0.2s ease, opacity 0.2s ease, background 0.3s ease; /* 增加背景顏色變化 */
+  animation: pulse 1.5s infinite; /* 添加脈動動畫 */
+}
+
+/* 增加動畫效果 */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/* 整個滾動條 */
+::-webkit-scrollbar {
+  width: 12px; /* 滾動條的寬度 */
+  background-color: #f0f0f0; /* 滾動條的背景 */
+}
+
+/* 滾動條的滑塊 */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* 滑塊的顏色 */
+  border-radius: 10px; /* 滑塊的圓角 */
+}
+
+/* 滑塊在 hover 時的顏色 */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* hover 時的顏色 */
+}
+
+/* 滾動條的底部 */
+::-webkit-scrollbar-track {
+  background-color: #f0f0f0; /* 滾動條底部的顏色 */
+  border-radius: 10px; /* 圓角 */
+}

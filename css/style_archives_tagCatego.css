@@ -1,0 +1,163 @@
+/* Archives 的主要區域 */
+main {
+  max-width: 800px; /* 控制內容的最大寬度 */
+  margin: 0 auto; /* 垂直居中內容 */
+  padding: 20px; /* 內邊距 */
+  background: linear-gradient(135deg, #f9f9f9, #e3f2fd); /* 漸變背景 */
+  border-radius: 12px; /* 圓角 */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* 陰影 */
+  transition: box-shadow 0.3s ease-in-out; /* 陰影過渡效果 */
+}
+
+main:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* 懸停時陰影效果 */
+}
+
+/* Archives 標題樣式 */
+main h2 {
+  font-size: 1.8em; /* 標題字體大小 */
+  color: #641919; /* 標題顏色 */
+  border-bottom: 1px dashed #0c3559; /* 底部邊框 */
+  text-align: center; /* 標題居中對齊 */
+  text-transform: uppercase; /* 標題字母大寫 */
+  letter-spacing: 1px; /* 標題字母間距 */
+}
+
+/* 文章列表樣式 */
+main ul {
+  list-style: none; /* 去掉列表前的符號 */
+  padding: 0; /* 去掉內邊距 */
+  margin: 0; /* 去掉外邊距 */
+}
+
+main ul li {
+  padding: 4px 4px 4px 4px; /* 內邊距 */
+  border-radius: 8px; /* 圓角 */
+  border: 1px solid #ddd; /* 列表項目分隔線 */
+  background: #ffffff; /* 背景顏色 */
+  margin-bottom: 5px; /* 列表項目下方間距 */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* 背景顏色和變形過渡效果 */
+}
+
+main ul li:hover {
+  background-color: #e8f5e9; /* 懸停背景顏色 */
+  transform: translateY(-3px); /* 懸停時微微上浮效果 */
+}
+
+main ul li:last-child {
+  border-bottom: none; /* 去掉最後一項的分隔線 */
+}
+
+main ul li a {
+  color: #1e88e5; /* 文章標題顏色 */
+  text-decoration: none; /* 去掉下劃線 */
+  font-size: 1.2em; /* 文章標題字體大小 */
+}
+
+main ul li a:hover {
+  text-decoration: underline; /* 懸停時顯示下劃線 */
+  color: #003c71; /* 懸停顏色 */
+}
+
+/* 文章日期樣式 */
+main ul li span.date {
+  color: #888; /* 日期顏色 */
+  font-style: italic; /* 日期斜體 */
+  font-size: 0.9em; /* 日期字體大小 */
+}
+
+
+/* 標籤區域樣式 */
+#tags {
+  padding: 10px; /* 內邊距 */
+  background: linear-gradient(135deg, #f9f9f9, #fdf6e3); /* 漸變背景 */
+  border-radius: 12px; /* 圓角 */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* 陰影 */
+  transition: box-shadow 0.3s ease-in-out; /* 陰影過渡效果 */
+}
+
+#tags h3 {
+  font-size: 1.8em; /* 標籤標題字體大小 */
+  color: #3e2723; /* 標籤標題顏色 */
+  margin-bottom: 10px; /* 標籤標題下方間距 */
+}
+
+#tags ul {
+  list-style: none; /* 去掉列表前的符號 */
+  padding: 0; /* 去掉內邊距 */
+  margin: 0; /* 去掉外邊距 */
+}
+
+#tags ul li {
+  padding: 4px 4px 4px 4px; /* 內邊距 */
+  border-radius: 8px; /* 圓角 */
+  border: 1px solid #ddd; /* 列表項目分隔線 */
+  background: #ffffff; /* 背景顏色 */
+  margin-bottom: 5px; /* 列表項目下方間距 */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* 背景顏色和變形過渡效果 */
+}
+
+#tags ul li:hover {
+  background-color: #fffff2; /* 懸停背景顏色 */
+  transform: translateY(-3px); /* 懸停時微微上浮效果 */
+}
+
+#tags ul li a {
+  color: #1e88e5; /* 文章標題顏色 */
+  text-decoration: none; /* 去掉下劃線 */
+  font-size: 1.2em; /* 文章標題字體大小 */
+  border-radius: 20px; /* 圓角 */
+}
+
+#tags ul li a:hover {
+  text-decoration: underline; /* 懸停時顯示下劃線 */
+  color: #004d40; /* 懸停顏色 */
+}
+
+
+/* 分類區域樣式 */
+#category {
+  padding: 10px; /* 內邊距 */
+  background: linear-gradient(135deg, #f9f9f9, #f8e0f1); /* 漸變背景 */
+  border-radius: 12px; /* 圓角 */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* 陰影 */
+  transition: box-shadow 0.3s ease-in-out; /* 陰影過渡效果 */
+}
+
+#category h3 {
+  font-size: 1.8em; /* 標籤標題字體大小 */
+  color: #3e2723; /* 標籤標題顏色 */
+  margin-bottom: 10px; /* 標籤標題下方間距 */
+}
+
+#category ul {
+  list-style: none; /* 去掉列表前的符號 */
+  padding: 0; /* 去掉內邊距 */
+  margin: 0; /* 去掉外邊距 */
+}
+
+#category ul li {
+  padding: 4px 4px 4px 4px; /* 內邊距 */
+  border-radius: 8px; /* 圓角 */
+  border: 1px solid #ddd; /* 列表項目分隔線 */
+  background: #ffffff; /* 背景顏色 */
+  margin-bottom: 5px; /* 列表項目下方間距 */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* 背景顏色和變形過渡效果 */
+}
+
+#category ul li:hover {
+  background-color: #fcf8ff; /* 懸停背景顏色 */
+  transform: translateY(-3px); /* 懸停時微微上浮效果 */
+}
+
+#category ul li a {
+  color: #1e88e5; /* 文章標題顏色 */
+  text-decoration: none; /* 去掉下劃線 */
+  font-size: 1.2em; /* 文章標題字體大小 */
+  border-radius: 20px; /* 圓角 */
+}
+
+#category ul li a:hover {
+  text-decoration: underline; /* 懸停時顯示下劃線 */
+  color: #004d40; /* 懸停顏色 */
+}

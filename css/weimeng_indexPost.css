@@ -1,0 +1,46 @@
+.large-options {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.option {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.0001); 
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  width: 30%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.option:hover {
+  background-color: rgba(0, 0, 0, 0.01); 
+}
+
+.option:hover h3,
+.option:hover p {
+  color: #007BFF; /* 懸停時字體顏色 */
+}
+
+.hover-image {
+  position: absolute;
+  bottom: -100%; /* 預設隱藏圖片 */
+  left: 0%;
+  transform: translate(-50%, 0);
+  opacity: 0; /* 初始不顯示 */
+  visibility: hidden; /* 初始設置為隱藏 */
+  pointer-events: none; /* 讓圖片不攔截滑鼠事件 */
+  transition: bottom 0.3s ease, opacity 0.3s ease, visibility 0s 0.3s; /* 動畫效果 */
+  width: 250px; /* 調整圖片大小 */
+  z-index: 1; /* 確保圖片在上層 */
+}
+
+.option:hover .hover-image {
+  bottom: 0px; /* 懸停時圖片顯示位置 */
+  opacity: 1; /* 懸停時顯示圖片 */
+  visibility: visible; /* 懸停時可見 */
+  transition: bottom 0.3s ease, opacity 0.3s ease, visibility 0s; /* 動畫效果 */
+}

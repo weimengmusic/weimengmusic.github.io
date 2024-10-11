@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>崴崴孟孟 - weimengmusic</title>
+<meta name="description" content="崴寶Weibert Weiberson 的網站，分享 AI、深度學習、機器學習、Hexo 主題開發及技術教學。探索最新的技術趨勢和開源項目。">
+<meta name="keywords" content="Well崴寶, Well威寶, 威寶weiberson, 威寶,威寶weibert, 崴寶Weibert, Weibert, Weiberson, 崴寶,Weiberson Chang, AI, 深度學習, 機器學習, Hexo, GitHub, 教學, 開源, BERT, Transformers, weitsung50110">
+<meta name="author" content="崴寶Weibert Weiberson">
+<meta name="google-site-verification" content="jWAoNzh1Gol-JoVVT5Q0DjtDlWhLkB2STELvHuQipNE" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q85YRD51M0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q85YRD51M0');
+</script>
+
+<link rel="stylesheet" href="/css/main.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+<body>
+  <div class="post_bg" style="">
+    <div class="archive_bg" style="">
+      
+      <header>
+  <div class="header-content">
+    <img property="og:image" src="https://weimengmusic.github.io/images/boy11.png" alt="Logo" class="logo">
+    <h1><a href="https://weimengmusic.github.io">崴崴孟孟 - weimengmusic<br/>永遠幸福的世界</a></h1>
+    <img src="https://weimengmusic.github.io/images/boy5.png" alt="Logo2" class="logo2">
+
+    <!-- 在 nav 中包裹選單 -->
+    <nav class="mobile-nav">
+      <ul class="nav-top">
+        <li><a href="https://weimengmusic.github.io?showPosts=true">首頁</a></li>
+        <li><a href="https://weimengmusic.github.io/about">關於</a></li>
+        <li><a href="https://weimengmusic.github.io/archives">部落格</a></li>
+        <li><a id="tag_toggleButton">標籤&類別</a></li>
+        <li class="dropdown">
+          <a class="menu-button">跟隨我</a>
+          <div class="nav-menu">
+            <div class="menu-content">
+              <a target="_blank" rel="noopener" href="https://github.com/weitsung50110">
+                <img src="https://weimengmusic.github.io/images/github.png" alt="GitHub" class="dropdown_social-icon">
+                GitHub</a>
+              <a target="_blank" rel="noopener" href="https://medium.com/@weiberson">
+                <img src="https://weimengmusic.github.io/images/medium.png" alt="Medium" class="dropdown_social-icon">
+                Medium</a>
+              <a target="_blank" rel="noopener" href="https://www.instagram.com/weiberson_blog/">
+                <img src="https://weimengmusic.github.io/images/ig.png" alt="Instagram" class="dropdown_social-icon">
+                IG</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <!-- 搜尋框 -->
+      <ul class="nav-bottom">
+        <li>
+          <div id="search-container">
+            <input type="text" id="search-input" placeholder="搜尋文章..." />
+            <button id="search-button">搜尋</button>
+            
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- 在 header 中添加漢堡選單 -->
+  <button class="menu-toggle" aria-label="Toggle Navigation">
+    ☰
+  </button>
+  
+  <div id="press_show_cute"></div>
+</header>
+
+    
+      <div id="container">
+        <div id="search-modal" class="search-modal">
+  <div class="search-modal-content">
+    <h3>搜尋結果</h3>
+    <span id="search-close" class="search-close">&times;</span>
+    <div id="search-results"></div>
+  </div>
+</div>
+        
+<!-- 限制每頁顯示的文章數量 -->
+
+
+<!-- 大選項 -->
+<div class="large-options">
+  <div class="option" >
+    <div onclick="location.href='/archives'">
+      <h3>部落格</h3>
+      <p>探索我們的最新文章和技術分享。</p>
+    </div>
+    <img src="https://weimengmusic.github.io/images/2.png" class="hover-image" alt="部落格圖片">
+  </div>
+  <div class="option" >
+    <div onclick="location.href='/services'">
+      <h3>崴孟幸福服務</h3>
+      <p>了解我們的各種服務和解決方案。</p>
+    </div>
+    <img src="https://weimengmusic.github.io/images/2.png" class="hover-image" alt="部落格圖片">
+  </div>
+  <div class="option">
+    <div onclick="location.href='/coding'">
+      <h3>崴孟程式教學</h3>
+      <p>學習程式設計和技術的精彩教程。</p>
+    </div>
+    <img src="https://weimengmusic.github.io/images/2.png" class="hover-image" alt="部落格圖片">
+  </div>
+</div>
+
+<!-- index.ejs -->
+<div id="home" class="container home-intro">
+  <img src="https://weimengmusic.github.io/images/a2.png" alt="Welcome Image" class="home-image">
+  <h2>我會把我在Medium寫過的教學存在這裡，期望之後也會繼續寫技術文分享給大家。</h2>
+  <!-- 桌面版本 -->
+  <p class="welcome-desktop">My name is Weibert Mengbert</p>
+  <!-- 手機版本 -->
+  <p class="welcome-mobile">I work as an AI Software Engineer, focusing on CV, LLM, Deep Learning, and Machine Learning.</p>
+  <!-- 顯示總文章數量 -->
+  <p class="post-count">文章數量: 2 篇</p>
+</div>
+
+
+
+
+
+<div id="cursor-effect" class="cursor-effect"></div>
+ 
+      </div>
+      
+      <!-- 側邊欄 -->
+<div id="sidebar">
+  <button id="close-btn">&times;</button>
+  <div class="author-info">
+    <div class="info-wrapper">
+      <img src="https://weimengmusic.github.io/images/a2.jpg" alt="作者照片" class="author_photo">
+    </div>
+    <h2>崴崴孟孟</h2>
+    <p>(Weibert & Mengbert)</p>
+    <span>Master of Computer Science / AI Software Engineer</span>
+    <div class="About">
+      <a href="https://weimengmusic.github.io/about">About 崴崴孟孟</a>
+    </div>
+    <img src="https://weimengmusic.github.io/images/2.png" id="about-image" alt="部落格圖片">
+    <div class="social-icons">
+      <a href="https://github.com/weitsung50110" target="_blank" class="social-icon">
+        <img src="https://weimengmusic.github.io/images/github.png" alt="GitHub">
+      </a>
+      <a href="https://medium.com/@weiberson" target="_blank" class="social-icon">
+        <img src="https://weimengmusic.github.io/images/medium.png" alt="Medium">
+      </a>
+      <a href="https://www.instagram.com/weiberson_blog/" target="_blank" class="social-icon">
+        <img src="https://weimengmusic.github.io/images/ig.png" alt="Instagram">
+      </a>
+    </div>
+    <div class="social-links">
+      <h3>聯絡我</h3>
+      <ul>
+        <img src="https://weimengmusic.github.io/images/2.png" id="social-image" alt="部落格圖片">
+        <li><strong>Instagram:</strong> 
+          <a href="https://www.instagram.com/weibert_music/" target="_blank">weibert_music</a> 
+          <a href="https://www.instagram.com/mengbert_music/" target="_blank">mengbert_music</a>
+          <a href="https://www.instagram.com/weiberson_blog/" target="_blank">weimeng_music</a>
+        </li>
+        <li><strong>YouTube:</strong> 
+          <a href="https://www.youtube.com/@WeibertMeng" target="_blank">崴崴孟孟</a> 
+          <a href="https://www.youtube.com/@weibert" target="_blank">Well崴寶程式開發天堂</a>
+        </li>
+        <li><strong>TikTok:</strong> 
+          <a href="https://www.tiktok.com/@mengbert" target="_blank">孟寶Mengbert</a> 
+          <a href="https://www.tiktok.com/@weibert1" target="_blank">崴寶Weibert</a> 
+        </li>
+        <li><strong>Spotify:</strong> 
+          <a href="https://open.spotify.com/track/5ywBn4ctsqdnjZQnGQyJy5" target="_blank">崴孟Spotify</a> 
+        </li>
+        <li><strong>網站:</strong> <a href="https://weitsung50110.github.io/" target="_blank">崴寶網站</a></li>
+        <li><strong>Facebook:</strong> <a href="https://www.facebook.com/weibert1/" target="_blank">Well崴寶程式開發天堂</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<button id="open-btn">🤗</button>
+
+      <!-- 彈跳視窗容器 -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close" id="closeButton">&times;</span>
+    <div class="modal-sections">
+      <!-- <div class="social-links-section">
+        <h3>跟隨我</h3>
+        <div class="social-links">
+          <a href="https://github.com/weitsung50110" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+          <a href="https://medium.com/@weiberson" target="_blank"><i class="fab fa-medium"></i>Medium</a>
+        </div>
+      </div> -->
+      
+      
+        <div class="categories-section">
+          <h3>類別</h3>
+          <div class="categories-container">
+            
+              <a href="#" class="category-item" data-category="GitHub">GitHub</a>
+            
+          </div>
+        </div>
+      
+
+      
+        <div class="tags-section">
+          <h3>標籤</h3>
+          <div class="tags-container">
+            
+              <a href="#" class="tag-item" data-tag="GitHub">GitHub</a>
+            
+              <a href="#" class="tag-item" data-tag="Git">Git</a>
+            
+              <a href="#" class="tag-item" data-tag="fork">fork</a>
+            
+              <a href="#" class="tag-item" data-tag="開源">開源</a>
+            
+              <a href="#" class="tag-item" data-tag="Hexo主題">Hexo主題</a>
+            
+          </div>
+        </div>
+      
+      
+      <!-- <div id="tag-content" style="display:none;">
+        
+          <a href="https://weimengmusic.github.io/tags/GitHub/" class="tag-item">GitHub</a>
+        
+          <a href="https://weimengmusic.github.io/tags/Git/" class="tag-item">Git</a>
+        
+          <a href="https://weimengmusic.github.io/tags/fork/" class="tag-item">fork</a>
+        
+          <a href="https://weimengmusic.github.io/tags/%E9%96%8B%E6%BA%90/" class="tag-item">開源</a>
+        
+          <a href="https://weimengmusic.github.io/tags/Hexo%E4%B8%BB%E9%A1%8C/" class="tag-item">Hexo主題</a>
+        
+      </div>
+      
+      <div id="category-content" style="display:none;">
+        
+          <a href="https://weimengmusic.github.io/categories/GitHub/" class="category-item">GitHub</a>
+        
+      </div> -->
+      
+      <!-- 顯示內容的區域 -->
+      <div id="content-area"></div>
+    </div>
+  </div>
+</div>
+
+      <footer>
+  <img src="https://weimengmusic.github.io/images/boy8.png" class="footer-logo"> 
+  <img src="https://weimengmusic.github.io/images/boy9.png" class="footer-rwd-logo"> 
+  <p>&copy; 2024 崴崴孟孟. All rights reserved.</p>
+  <!-- <script src="/js/main.js"></script> -->
+  <!-- <script src="/js/script.js"></script> -->
+  <script src="/js/script.js"></script>
+  <script src="/js/popup_tag.js"></script>
+  <script src="/js/search.js"></script>
+  <script src="/js/sidebar.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/post.js"></script>  
+  <script src="/js/header.js"></script>  
+  
+</footer>
+
+      
+    </div>
+  </div>
+  
+  <!-- 返回頂部按鈕 -->
+  <button id="scroll-to-top-btn" class="scroll-to-top-btn">▲</button>
+  
+</body>
+</html>

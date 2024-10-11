@@ -1,0 +1,210 @@
+/* 側邊欄樣式 */
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* 初始位置在屏幕外 */
+  width: 250px;
+  height: 100%;
+  background-color: rgba(255, 182, 193, 0.2); /* 浅粉色背景 */
+  color: #ffffff; /* 文字顏色 */
+  transition: left 0.3s ease; /* 只改變 left 屬性，保持動畫平滑 */
+  padding-top: 10px;
+  z-index: 1000; /* 確保側邊欄在最上層 */
+  overflow-y: auto; /* 垂直方向顯示滾動條 */
+  overflow-x: hidden;
+  color: #70063b; /* 粉色標題顏色 */
+}
+
+/* 滾動條樣式 */
+#sidebar::-webkit-scrollbar {
+  width: 12px; /* 設定滾動條寬度 */
+}
+
+#sidebar::-webkit-scrollbar-track {
+  background: rgba(255, 182, 193, 0.5); /* 滾動條背景顏色 */
+  border-radius: 10px; /* 滾動條背景圓角 */
+}
+
+#sidebar::-webkit-scrollbar-thumb {
+  background: rgba(255, 105, 180, 0.8); /* 滾動條滑塊顏色 */
+  border-radius: 10px; /* 滾動條滑塊圓角 */
+  border: 3px solid rgba(255, 182, 193, 0.5); /* 滾動條滑塊邊框 */
+}
+
+#sidebar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 105, 180, 1); /* 滾動條滑塊懸停顏色 */
+}
+
+/* 作者信息樣式 */
+.author-info {
+  text-align: center; /* 圖片和文字居中 */
+}
+
+.author_photo {
+  width: 150px; /* 設置圖片寬度 */
+  height: 150px; /* 設置圖片高度 */
+  border-radius: 50%; /* 圓形圖片 */
+  object-fit: cover; /* 確保圖片不變形 */
+}
+
+.author-info span {
+  display: block; /* 使 span 元素顯示為區塊級元素，以便換行 */
+}
+
+#sidebar h2 {
+  margin-top: 0;
+  line-height: 1.0; /* 設定合適的行高，根據需要調整 */
+  color: #ff69b4; /* 粉色標題顏色 */
+}
+
+/* 關閉按鈕樣式 */
+#close-btn {
+  position: absolute; /* 使用絕對定位 */
+  background: none;
+  border: none;
+  color: #e00a75;
+  font-size: 24px;
+  cursor: pointer;
+  top: 10px; /* 距離頂部10px */
+  right: 10px; /* 距離右邊10px */
+}
+
+#close-btn:hover {
+  background: rgba(255, 105, 180, 0.7); /* 懸停時背景顏色 */
+  color: #fff; /* 懸停時文字顏色 */
+}
+
+/* About 按鈕樣式 */
+.About a {
+  text-decoration: none;
+  background: rgba(255, 192, 203, 0.9); /* 粉色背景 */
+  color: #cd6000; /* 文字顏色 */
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background 0.1s, color 0.1s;
+}
+
+.About a:hover {
+  background: rgba(255, 182, 193, 0.9); /* 懸停時背景顏色 */
+  color: #633000; /* 懸停時文字顏色 */
+}
+
+/* About 圖片樣式 */
+#about-image {
+  position: absolute; /* 絕對定位 */
+  top: 90px; /* 距離頂部的距離 */
+  left: 0; /* 左側對齊 */
+  width: 100%; /* 圖片寬度 */
+  transition: transform 0.5s ease, opacity 0.5s ease; /* 動畫過渡 */
+  transform: translateY(-20px); /* 初始位置稍微向上移動 */
+  opacity: 0; /* 初始透明度 */
+}
+
+.About:hover + #about-image {
+  display: block; /* 顯示圖片 */
+  transform: translateY(0); /* 恢復到正常位置 */
+  opacity: 1; /* 設置透明度 */
+}
+
+
+
+.show {
+  display: block; /* 顯示圖片 */
+  transform: translateY(0); /* 恢復到正常位置 */
+}
+
+/* 打開按鈕樣式 */
+#open-btn {
+  position: fixed; /* 固定定位 */
+  left: 10px; /* 距離左邊10像素 */
+  bottom: 10px; /* 距離底部10像素 */
+  background-color: rgba(255, 192, 203, 0.1); /* 粉色透明背景 */
+  color: #000; /* 按鈕文字顏色 */
+  border: 1px dashed #ff69b4; /* 粉色邊框 */
+  padding: 10px; /* 內邊距 */
+  border-radius: 35px; /* 圓角 */
+  cursor: pointer; /* 滑鼠懸停時顯示手形 */
+  font-size: 16px; /* 字體大小 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 陰影 */
+  z-index: 999;
+}
+
+#open-btn:hover {
+  background-color: rgba(255, 182, 193, 0.9); /* 懸停時的顏色變化 */
+}
+
+/* 社交圖標樣式 */
+.social-icons {
+  display: flex; /* 使用彈性布局 */
+  flex-direction: row; /* 橫向排列 */
+  justify-content: center; /* 中心對齊 */
+  margin-top: 10px; /* 上方間距 */
+}
+
+.social-icon {
+  width: 43.5px; /* 圖標寬度 */
+  height: 33px; /* 圖標高度 */
+  margin: 0 5px; /* 左右間距 */
+  border-radius: 50%; /* 圓形背景 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s; /* 鼠標懸停效果過渡 */
+}
+
+.social-icon img {
+  width: 100%; /* 圖標圖片的寬度 */
+  height: auto; /* 自動高度 */
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* 鼠標懸停時放大 */
+}
+
+/* 聯絡我樣式 */
+.social-links {
+  margin-top: 10px; /* 上方間距 */
+  text-align: left; /* 左對齊 */
+}
+
+.social-links a {
+  transition: color 0.1s; /* 連結懸停效果過渡 */
+}
+
+.social-links a:hover {
+  color: #ff69b4; /* 懸停時顏色變化 */
+}
+
+.social-links {
+  margin-top: 10px; /* 上方間距 */
+  text-align: left; /* 左對齊 */
+  position: relative; /* 使圖片相對於這個元素定位 */
+}
+
+.social-links img {
+  position: absolute; /* 絕對定位 */
+  top: 0; /* 距離容器頂部 */
+  left: 110%; /* 在容器右側顯示 */
+  width: 100px; /* 圖片寬度 */
+  opacity: 0; /* 初始透明度 */
+  transition: opacity 0.3s ease; /* 透明度過渡效果 */
+  pointer-events: none; /* 讓圖片不影響鼠標事件 */
+}
+
+.social-links a {
+  transition: color 0.2s, background-color 0.2s; /* 連結懸停效果過渡 */
+  color: #cd6000; /* 文字顏色 */
+  text-decoration: none; /* 移除下劃線 */
+  padding: 5px 10px; /* 內邊距 */
+  border-radius: 5px; /* 圓角 */
+}
+
+.social-links a:hover {
+  color: #fff; /* 懸停時文字顏色 */
+  background-color: #ff69b4; /* 懸停時背景顏色 */
+}
+
+/* 懸停時顯示圖片 */
+.social-links a:hover ~ img {
+  opacity: 1; /* 懸停時顯示圖片 */
+}
