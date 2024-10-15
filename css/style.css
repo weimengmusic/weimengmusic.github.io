@@ -37,37 +37,49 @@ body {
 
 
 .home-intro {
-  padding: 20px 10px;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  position: relative;
-  overflow: hidden;
-  color: #ffffff;
+    position: relative;
+    padding: 50px 0px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    overflow: hidden;
 }
 
 .home-intro .home-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* 確保圖片覆蓋容器 */
-  z-index: -1; /* 確保圖片在文字下方 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 確保圖片覆蓋容器 */
+    z-index: -1; /* 確保圖片在文字下方 */
+    animation: gradientShift 15s ease infinite; /* 添加動畫效果 */
 }
 
+/* 漸變背景動畫 */
+@keyframes gradientShift {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* 標題樣式 */
 .home-intro h2 {
-  font-size: 1.6em;
-  margin-bottom: 10px;
-  color: #ff83a6;
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
-  animation: textPulse 1.5s ease infinite;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: #ffd8e3;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+    animation: textPulse 1.5s ease infinite; /* 添加文本脈動動畫 */
 }
 
+/* 文本脈動動畫 */
 @keyframes textPulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.01); }
+    0% { text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2); }
+    50% { text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4); }
+    100% { text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2); }
 }
+
 
 .welcome-desktop {
   display: block; /* 預設為顯示 */
@@ -130,25 +142,23 @@ body {
 }
 
 
-/* 整個滾動條 */
+/* 滾動條樣式 */
+/* 全局滾動條樣式 */
 ::-webkit-scrollbar {
-  width: 12px; /* 滾動條的寬度 */
-  background-color: #f0f0f0; /* 滾動條的背景 */
+  width: 12px; /* 設定滾動條寬度 */
 }
 
-/* 滾動條的滑塊 */
-::-webkit-scrollbar-thumb {
-  background-color: #888; /* 滑塊的顏色 */
-  border-radius: 10px; /* 滑塊的圓角 */
-}
-
-/* 滑塊在 hover 時的顏色 */
-::-webkit-scrollbar-thumb:hover {
-  background-color: #555; /* hover 時的顏色 */
-}
-
-/* 滾動條的底部 */
 ::-webkit-scrollbar-track {
-  background-color: #f0f0f0; /* 滾動條底部的顏色 */
-  border-radius: 10px; /* 圓角 */
+  background: rgba(255, 182, 193, 0.5); /* 滾動條背景顏色 */
+  border-radius: 10px; /* 滾動條背景圓角 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 105, 180, 0.8); /* 滾動條滑塊顏色 */
+  border-radius: 10px; /* 滾動條滑塊圓角 */
+  border: 3px solid rgba(255, 182, 193, 0.5); /* 滾動條滑塊邊框 */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 105, 180, 1); /* 滾動條滑塊懸停顏色 */
 }

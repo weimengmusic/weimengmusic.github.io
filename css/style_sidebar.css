@@ -15,25 +15,7 @@
   color: #70063b; /* 粉色標題顏色 */
 }
 
-/* 滾動條樣式 */
-#sidebar::-webkit-scrollbar {
-  width: 12px; /* 設定滾動條寬度 */
-}
 
-#sidebar::-webkit-scrollbar-track {
-  background: rgba(255, 182, 193, 0.5); /* 滾動條背景顏色 */
-  border-radius: 10px; /* 滾動條背景圓角 */
-}
-
-#sidebar::-webkit-scrollbar-thumb {
-  background: rgba(255, 105, 180, 0.8); /* 滾動條滑塊顏色 */
-  border-radius: 10px; /* 滾動條滑塊圓角 */
-  border: 3px solid rgba(255, 182, 193, 0.5); /* 滾動條滑塊邊框 */
-}
-
-#sidebar::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 105, 180, 1); /* 滾動條滑塊懸停顏色 */
-}
 
 /* 作者信息樣式 */
 .author-info {
@@ -168,43 +150,15 @@
 }
 
 .social-links a {
-  transition: color 0.1s; /* 連結懸停效果過渡 */
-}
-
-.social-links a:hover {
-  color: #ff69b4; /* 懸停時顏色變化 */
-}
-
-.social-links {
-  margin-top: 10px; /* 上方間距 */
-  text-align: left; /* 左對齊 */
-  position: relative; /* 使圖片相對於這個元素定位 */
-}
-
-.social-links img {
-  position: absolute; /* 絕對定位 */
-  top: 0; /* 距離容器頂部 */
-  left: 110%; /* 在容器右側顯示 */
-  width: 100px; /* 圖片寬度 */
-  opacity: 0; /* 初始透明度 */
-  transition: opacity 0.3s ease; /* 透明度過渡效果 */
-  pointer-events: none; /* 讓圖片不影響鼠標事件 */
-}
-
-.social-links a {
   transition: color 0.2s, background-color 0.2s; /* 連結懸停效果過渡 */
   color: #cd6000; /* 文字顏色 */
   text-decoration: none; /* 移除下劃線 */
   padding: 5px 10px; /* 內邊距 */
   border-radius: 5px; /* 圓角 */
+  margin: -5px 0; /* 上下邊距為負值 */
 }
 
 .social-links a:hover {
   color: #fff; /* 懸停時文字顏色 */
   background-color: #ff69b4; /* 懸停時背景顏色 */
-}
-
-/* 懸停時顯示圖片 */
-.social-links a:hover ~ img {
-  opacity: 1; /* 懸停時顯示圖片 */
 }

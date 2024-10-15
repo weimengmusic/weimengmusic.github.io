@@ -23,13 +23,13 @@
 <meta name="generator" content="Hexo 7.3.0"></head>
 <body>
   <div class="post_bg" style="">
-    <div class="archive_bg" style="background-image: url(&#39;https://weimengmusic.github.io/images/boy15.png&#39;);">
+    <div class="archive_bg" style="">
       
       <header>
   <div class="header-content">
-    <img property="og:image" src="https://weimengmusic.github.io/images/boy11.png" alt="Logo" class="logo">
+    <img property="og:image" src="https://weimengmusic.github.io/images/1.png" alt="Logo" class="logo">
     <h1><a href="https://weimengmusic.github.io">崴崴孟孟 - weimengmusic<br/>永遠幸福的世界</a></h1>
-    <img src="https://weimengmusic.github.io/images/boy5.png" alt="Logo2" class="logo2">
+    <img src="https://weimengmusic.github.io/images/2.png" alt="Logo2" class="logo2">
 
     <!-- 在 nav 中包裹選單 -->
     <nav class="mobile-nav">
@@ -37,23 +37,56 @@
         <li><a href="https://weimengmusic.github.io?showPosts=true">首頁</a></li>
         <li><a href="https://weimengmusic.github.io/about">關於</a></li>
         <li><a href="https://weimengmusic.github.io/archives">部落格</a></li>
-        <li><a id="tag_toggleButton">標籤&類別</a></li>
+        <li><a id="tag_toggleButton">文章分類</a></li>
         <li class="dropdown">
           <a class="menu-button">跟隨我</a>
-          <div class="nav-menu">
+          <div class="popup-menu nav-menu">
             <div class="menu-content">
-              <a target="_blank" rel="noopener" href="https://github.com/weitsung50110">
+              <!-- <a target="_blank" rel="noopener" href="https://github.com/weitsung50110">
                 <img src="https://weimengmusic.github.io/images/github.png" alt="GitHub" class="dropdown_social-icon">
-                GitHub</a>
+                GitHub
+              </a>
               <a target="_blank" rel="noopener" href="https://medium.com/@weiberson">
                 <img src="https://weimengmusic.github.io/images/medium.png" alt="Medium" class="dropdown_social-icon">
-                Medium</a>
+                Medium
+              </a>
               <a target="_blank" rel="noopener" href="https://www.instagram.com/weiberson_blog/">
                 <img src="https://weimengmusic.github.io/images/ig.png" alt="Instagram" class="dropdown_social-icon">
-                IG</a>
+                IG
+              </a> -->
+              <!-- 新增的社交連結 -->
+              <div class="dropdown_section">
+                <strong>🩵 Instagram:</strong>
+                <a href="https://www.instagram.com/weibert_music/" target="_blank">weibert_music</a>
+                <a href="https://www.instagram.com/mengbert_music/" target="_blank">mengbert_music</a>
+                <a href="https://www.instagram.com/weiberson_blog/" target="_blank">weimeng_music</a>
+              </div>
+              <div class="dropdown_section">
+                <strong>🩵 YouTube:</strong>
+                <a href="https://www.youtube.com/@WeibertMeng" target="_blank">崴崴孟孟</a>
+                <a href="https://www.youtube.com/@weibert" target="_blank">Well崴寶程式開發天堂</a>
+              </div>
+              <div class="dropdown_section">
+                <strong>🩵 TikTok:</strong>
+                <a href="https://www.tiktok.com/@mengbert" target="_blank">孟寶Mengbert</a>
+                <a href="https://www.tiktok.com/@weibert1" target="_blank">崴寶Weibert</a>
+              </div>
+              <div class="dropdown_section">
+                <strong>🩵 Spotify:</strong>
+                <a href="https://open.spotify.com/track/5ywBn4ctsqdnjZQnGQyJy5" target="_blank">崴孟Spotify</a>
+              </div>
+              <div class="dropdown_section">
+                <strong>🩵 網站:</strong>
+                <a href="https://weitsung50110.github.io/" target="_blank">崴寶網站</a>
+              </div>
+              <div class="dropdown_section">
+                <strong>🩵 Facebook:</strong>
+                <a href="https://www.facebook.com/weibert1/" target="_blank">Well崴寶程式開發天堂</a>
+              </div>
             </div>
           </div>
         </li>
+        
       </ul>
       <!-- 搜尋框 -->
       <ul class="nav-bottom">
@@ -86,56 +119,117 @@
   </div>
 </div>
         
-<main id="archives">
-  
-  <h1></h1>
+<!-- 限制每頁顯示的文章數量 -->
 
-  
 
-  
-    
-      <section class="archive-year">
-        <h2>2024</h2>
-        <ul class="post-list">
-          
-            <li>
-              
-                <a href="/2024/09/09/%E5%B4%B4%E5%AF%B6%E7%A8%8B%E5%BC%8F%E6%95%99%E5%AD%B8/">
-                  崴寶程式教學
-                </a>
-              
-              <time datetime="2024-09-09T12:02:23.000Z">
-                2024-09-09
-              </time>
-              教你將修改提交到 Hexo 官方的 hexojs/site，從 fork 儲存庫到發送 Pull Request，為開源貢獻。
-            </li>
-          
-        </ul>
-      </section>
-    
-      <section class="archive-year">
-        <h2>2022</h2>
-        <ul class="post-list">
-          
-            <li>
-              
-                <a href="/2022/09/15/%E5%B4%B4%E5%AD%9F%E5%B9%B8%E7%A6%8F%E6%9C%8D%E5%8B%99/">
-                  崴孟幸福服務
-                </a>
-              
-              <time datetime="2022-09-15T03:49:40.000Z">
-                2022-09-15
-              </time>
-              No excerpt
-            </li>
-          
-        </ul>
-      </section>
-    
-  
-</main>
+<!-- index.ejs -->
+<div id="home" class="container home-intro">
+  <img src="https://weimengmusic.github.io/images/a2.png" alt="Welcome Image" class="home-image">
+  <!-- 桌面版本 -->
+  <h2><p class="welcome-desktop">歡迎來到崴孟幸福部落格</p></h2>
+  <!-- 手機版本 -->
+  <h2><p class="welcome-mobile">歡迎來到崴孟幸福部落格</p></h2>
+  <!-- 顯示總文章數量 -->
+  <p class="post-count">文章數量: 2 篇</p>
+</div>
 
-<div id="cursor-effect" class="cursor-effect"></div> 
+
+
+<div class="posts-container" style="background-image: url(&#39;https://weimengmusic.github.io/images/boy17.png&#39;);">
+  
+  
+    <article class="index_post">
+      <h2 class="title-link" onclick="location.href='https://weimengmusic.github.io/2024/09/09/%E5%B4%B4%E5%AF%B6%E7%A8%8B%E5%BC%8F%E6%95%99%E5%AD%B8/'">
+        崴寶程式教學
+        <span class="hover-icon">
+          <img src="https://weimengmusic.github.io/images/boy1.png" alt="Hover Icon">
+        </span>
+      </h2>
+      <p class="post-date">2024-09-09</p>
+      <div class="excerpt">
+        透過崴寶的課程，探索程式設計的樂趣，學習深度學習、計算機視覺等前沿技術！
+      </div>
+      
+      <!-- tags -->
+      
+        <div class="post-tags">
+          <span>標籤:</span>
+          <ul>
+            
+              <li><a href="https://weimengmusic.github.io/tags/%E7%A8%8B%E5%BC%8F%E6%95%99%E5%AD%B8/">程式教學</a></li>
+            
+              <li><a href="https://weimengmusic.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%B8%E7%BF%92/">深度學習</a></li>
+            
+              <li><a href="https://weimengmusic.github.io/tags/%E8%A8%88%E7%AE%97%E6%A9%9F%E8%A6%96%E8%A6%BA/">計算機視覺</a></li>
+            
+              <li><a href="https://weimengmusic.github.io/tags/%E8%BB%9F%E9%AB%94%E9%96%8B%E7%99%BC/">軟體開發</a></li>
+            
+          </ul>
+        </div>
+      
+
+      <!-- categories -->
+      
+        <div class="post-categories">
+          <span>類別:</span>
+          <ul>
+            
+              <li><a href="https://weimengmusic.github.io/categories/%E6%95%99%E5%AD%B8/">教學</a></li>
+            
+          </ul>
+        </div>
+      
+
+      <a class="read-more" href="https://weimengmusic.github.io/2024/09/09/%E5%B4%B4%E5%AF%B6%E7%A8%8B%E5%BC%8F%E6%95%99%E5%AD%B8/">Read More</a>
+    </article>
+  
+    <article class="index_post">
+      <h2 class="title-link" onclick="location.href='https://weimengmusic.github.io/2024/09/09/%E5%B4%B4%E5%AD%9F%E5%B9%B8%E7%A6%8F%E6%9C%8D%E5%8B%99/'">
+        崴孟幸福服務
+        <span class="hover-icon">
+          <img src="https://weimengmusic.github.io/images/boy1.png" alt="Hover Icon">
+        </span>
+      </h2>
+      <p class="post-date">2024-09-09</p>
+      <div class="excerpt">
+        提供專屬祝福影片，讓你用心表達祝福與支持！
+      </div>
+      
+      <!-- tags -->
+      
+        <div class="post-tags">
+          <span>標籤:</span>
+          <ul>
+            
+              <li><a href="https://weimengmusic.github.io/tags/%E9%9F%B3%E6%A8%82/">音樂</a></li>
+            
+              <li><a href="https://weimengmusic.github.io/tags/%E7%A5%9D%E7%A6%8F%E5%BD%B1%E7%89%87/">祝福影片</a></li>
+            
+              <li><a href="https://weimengmusic.github.io/tags/%E6%94%AF%E6%8C%81LGBTQ/">支持LGBTQ</a></li>
+            
+          </ul>
+        </div>
+      
+
+      <!-- categories -->
+      
+        <div class="post-categories">
+          <span>類別:</span>
+          <ul>
+            
+              <li><a href="https://weimengmusic.github.io/categories/%E6%9C%8D%E5%8B%99/">服務</a></li>
+            
+          </ul>
+        </div>
+      
+
+      <a class="read-more" href="https://weimengmusic.github.io/2024/09/09/%E5%B4%B4%E5%AD%9F%E5%B9%B8%E7%A6%8F%E6%9C%8D%E5%8B%99/">Read More</a>
+    </article>
+  
+</div>
+
+<div id="cursor-effect" class="cursor-effect"></div>
+ 
       </div>
       
       <!-- 側邊欄 -->
@@ -152,21 +246,9 @@
       <a href="https://weimengmusic.github.io/about">About 崴崴孟孟</a>
     </div>
     <img src="https://weimengmusic.github.io/images/2.png" id="about-image" alt="部落格圖片">
-    <div class="social-icons">
-      <a href="https://github.com/weitsung50110" target="_blank" class="social-icon">
-        <img src="https://weimengmusic.github.io/images/github.png" alt="GitHub">
-      </a>
-      <a href="https://medium.com/@weiberson" target="_blank" class="social-icon">
-        <img src="https://weimengmusic.github.io/images/medium.png" alt="Medium">
-      </a>
-      <a href="https://www.instagram.com/weiberson_blog/" target="_blank" class="social-icon">
-        <img src="https://weimengmusic.github.io/images/ig.png" alt="Instagram">
-      </a>
-    </div>
     <div class="social-links">
       <h3>聯絡我</h3>
       <ul>
-        <img src="https://weimengmusic.github.io/images/2.png" id="social-image" alt="部落格圖片">
         <li><strong>Instagram:</strong> 
           <a href="https://www.instagram.com/weibert_music/" target="_blank">weibert_music</a> 
           <a href="https://www.instagram.com/mengbert_music/" target="_blank">mengbert_music</a>
@@ -210,7 +292,9 @@
           <h3>類別</h3>
           <div class="categories-container">
             
-              <a href="#" class="category-item" data-category="GitHub">GitHub</a>
+              <a href="#" class="category-item" data-category="服務">服務</a>
+            
+              <a href="#" class="category-item" data-category="教學">教學</a>
             
           </div>
         </div>
@@ -221,15 +305,19 @@
           <h3>標籤</h3>
           <div class="tags-container">
             
-              <a href="#" class="tag-item" data-tag="GitHub">GitHub</a>
+              <a href="#" class="tag-item" data-tag="音樂">音樂</a>
             
-              <a href="#" class="tag-item" data-tag="Git">Git</a>
+              <a href="#" class="tag-item" data-tag="祝福影片">祝福影片</a>
             
-              <a href="#" class="tag-item" data-tag="fork">fork</a>
+              <a href="#" class="tag-item" data-tag="支持LGBTQ">支持LGBTQ</a>
             
-              <a href="#" class="tag-item" data-tag="開源">開源</a>
+              <a href="#" class="tag-item" data-tag="程式教學">程式教學</a>
             
-              <a href="#" class="tag-item" data-tag="Hexo主題">Hexo主題</a>
+              <a href="#" class="tag-item" data-tag="深度學習">深度學習</a>
+            
+              <a href="#" class="tag-item" data-tag="計算機視覺">計算機視覺</a>
+            
+              <a href="#" class="tag-item" data-tag="軟體開發">軟體開發</a>
             
           </div>
         </div>
@@ -237,21 +325,27 @@
       
       <!-- <div id="tag-content" style="display:none;">
         
-          <a href="https://weimengmusic.github.io/tags/GitHub/" class="tag-item">GitHub</a>
+          <a href="https://weimengmusic.github.io/tags/%E9%9F%B3%E6%A8%82/" class="tag-item">音樂</a>
         
-          <a href="https://weimengmusic.github.io/tags/Git/" class="tag-item">Git</a>
+          <a href="https://weimengmusic.github.io/tags/%E7%A5%9D%E7%A6%8F%E5%BD%B1%E7%89%87/" class="tag-item">祝福影片</a>
         
-          <a href="https://weimengmusic.github.io/tags/fork/" class="tag-item">fork</a>
+          <a href="https://weimengmusic.github.io/tags/%E6%94%AF%E6%8C%81LGBTQ/" class="tag-item">支持LGBTQ</a>
         
-          <a href="https://weimengmusic.github.io/tags/%E9%96%8B%E6%BA%90/" class="tag-item">開源</a>
+          <a href="https://weimengmusic.github.io/tags/%E7%A8%8B%E5%BC%8F%E6%95%99%E5%AD%B8/" class="tag-item">程式教學</a>
         
-          <a href="https://weimengmusic.github.io/tags/Hexo%E4%B8%BB%E9%A1%8C/" class="tag-item">Hexo主題</a>
+          <a href="https://weimengmusic.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%B8%E7%BF%92/" class="tag-item">深度學習</a>
+        
+          <a href="https://weimengmusic.github.io/tags/%E8%A8%88%E7%AE%97%E6%A9%9F%E8%A6%96%E8%A6%BA/" class="tag-item">計算機視覺</a>
+        
+          <a href="https://weimengmusic.github.io/tags/%E8%BB%9F%E9%AB%94%E9%96%8B%E7%99%BC/" class="tag-item">軟體開發</a>
         
       </div>
       
       <div id="category-content" style="display:none;">
         
-          <a href="https://weimengmusic.github.io/categories/GitHub/" class="category-item">GitHub</a>
+          <a href="https://weimengmusic.github.io/categories/%E6%9C%8D%E5%8B%99/" class="category-item">服務</a>
+        
+          <a href="https://weimengmusic.github.io/categories/%E6%95%99%E5%AD%B8/" class="category-item">教學</a>
         
       </div> -->
       
@@ -262,8 +356,8 @@
 </div>
 
       <footer>
-  <img src="https://weimengmusic.github.io/images/boy8.png" class="footer-logo"> 
-  <img src="https://weimengmusic.github.io/images/boy9.png" class="footer-rwd-logo"> 
+  <!-- <img src="https://weimengmusic.github.io/images/boy8.png" class="footer-logo"> 
+  <img src="https://weimengmusic.github.io/images/boy9.png" class="footer-rwd-logo">  -->
   <p>&copy; 2024 崴崴孟孟. All rights reserved.</p>
   <!-- <script src="/js/main.js"></script> -->
   <!-- <script src="/js/script.js"></script> -->

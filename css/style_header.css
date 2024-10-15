@@ -6,7 +6,7 @@
 }
 
 header {
-  background: rgba(0, 0, 0, 0.6); /* 半透明黑色 */
+  background: rgba(255, 182, 208, 0.8); /* 浅粉色背景 */
   background-size: 400% 400%;  /* 增加背景圖像的覆蓋範圍 */
   animation: gradientAnimation 15s ease infinite; /* 設置動畫效果*/
   color: #fff;
@@ -17,17 +17,16 @@ header {
   position: relative;
 }
 
-
 header .logo2 {
   content: '';
   position: absolute;
   top: 0;
-  right: 30%;
-  width: 15%;
-  height: 100%;
+  right: 35%;
   background-repeat: no-repeat;
   border-radius: 0; /* 確保不會變成圓形 */
-  /* opacity: 0.3; 設置透明度以便背景漸變顯示出來 */
+  opacity: 0; /* 初始不顯示 */
+  visibility: hidden; /* 初始不顯示 */
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* 添加過渡效果 */
 }
 
 /* Header 內容 */
@@ -48,8 +47,15 @@ header h1 {
   z-index: 1; 
 }
 
+/* h1 hover 時顯示 logo2 */
+header h1:hover + .logo2 {
+  opacity: 1; /* 顯示 logo2 */
+  visibility: visible; /* 設置為可見 */
+}
+
 header h1 a {
-  color: #ffe6dc; /* 初始字體顏色 */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #fff; /* 标题的颜色 */
   text-decoration: none; /* 去除下劃線 */
   font-size: 1.2em; /* 設定字體大小 */
   position: relative; /* 設定為相對定位，以便後面的絕對定位元素可以參考 */
@@ -60,9 +66,10 @@ header h1 a {
 }
 
 header h1 a:hover {
-  color: #fff7ce; /* 在 hover 時改變字體顏色 */
+  color: #feffed; /* 在 hover 時改變字體顏色 */
   transform: scale(1.05); /* 在 hover 時稍微放大元素 */
   background-color: rgba(255, 247, 206, 0.1); /* 在 hover 時改變背景顏色 */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 header h1 a::after {
@@ -101,6 +108,7 @@ nav {
   align-items: center;
   gap: 10px;
   z-index: 1000;
+  border-radius: 25px; /* 添加圓角，讓邊緣看起來更柔和 */
 }
 
 .nav-top li {
@@ -118,11 +126,12 @@ nav {
   padding: 10px;
   cursor: pointer;
   z-index: 2; 
+  border-radius: 25px; /* 添加圓角，讓邊緣看起來更柔和 */
 }
 
 .nav-top li a:hover{
   text-decoration: underline;
-  background-color: #9f3f00;
+  background-color:rgba(255, 105, 180, 0.7); /* 懸停時背景顏色 */
 }
 
 /* 下拉菜單樣式 */
@@ -139,6 +148,10 @@ nav {
   pointer-events: none; /* 初始禁用點擊事件 */
   opacity: 0; /* 初始不透明 */
   transition: opacity 0.3s; /* 添加過渡效果 */
+  
+  /* 新增的屬性 */
+  max-height: 300px; /* 設定最大高度 */
+  overflow-y: auto; /* 當內容超出時顯示垂直滾動條 */
 }
 
 /* 顯示下拉菜單 */
@@ -151,16 +164,17 @@ nav {
 /* 連結樣式 */
 .nav-menu a {
   display: block;
-  padding: 10px 15px;
-  color: #ddd ;
+  padding: 10px 15px; /* 增加上下內邊距以改善可讀性 */
+  color: #ddd;
   text-decoration: none;
   border-bottom: 1px solid #ddd;
+  margin: -5px 0; /* 上下邊距為負值 */
 }
 
 /* 連結懸停樣式 */
 .nav-menu a:hover {
   color: #ffffff !important;
-  background-color: rgb(196, 82, 33) ;
+  background-color: rgba(255, 105, 180, 0.7); /* 懸停時背景顏色 */
 }
 
 .dropdown_social-icon {
@@ -171,10 +185,12 @@ nav {
 
 
 
+
+
 /* 漢堡選單樣式 */
 .menu-toggle {
   display: none;
-  background: linear-gradient(45deg, #51595d, #384b55);
+  background: rgba(255, 105, 180, 0.9); /* 滾動條滑塊顏色 */
   color: #fff;
   border: none;
   padding: 10px;

@@ -9,22 +9,23 @@
   position: relative;
   padding: 10px;
   background: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #f2a6b2; /* 粉紅色邊框 */
   border-radius: 5px;
 }
 
 #search-input {
   padding: 8px;
-  border: 1px solid #ddd;
+  border: 1px solid #f2a6b2; /* 粉紅色邊框 */
   border-radius: 4px;
   font-size: 1em;
   width: 200px;
+  color: #333; /* 字體顏色 */
 }
 
 #search-button {
   padding: 8px 12px;
-  border: 1px solid #ddd;
-  background-color: #007bff;
+  border: 1px solid #f2a6b2; /* 粉紅色邊框 */
+  background-color: #ff6b81; /* 粉紅色背景 */
   color: white;
   border-radius: 4px;
   cursor: pointer;
@@ -32,7 +33,7 @@
 }
 
 #search-button:hover {
-  background-color: #0056b3;
+  background-color: #ff3f55; /* 更深的粉紅色 */
 }
 
 /* 模態框背景 */
@@ -65,7 +66,7 @@
 }
 
 .search-modal-content h3 {
-  color: chocolate;
+  color: #ff6b81; /* 粉紅色標題 */
   font-weight: bold;
 }
 
@@ -85,10 +86,10 @@
 
 /* 搜尋結果容器 */
 #search-results {
-  color: #007bff;
+  color: #ff6b81; /* 粉紅色文字 */
   margin-top: 10px;
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #f2a6b2; /* 粉紅色邊框 */
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   max-height: 300px;
@@ -99,18 +100,19 @@
   display: block;
   padding: 10px;
   text-decoration: none;
-  color: #007bff;
-  border-bottom: 1px solid #ddd;
+  color: #ff6b81; /* 粉紅色文字 */
+  border-bottom: 1px solid #f2a6b2; /* 粉紅色邊框 */
 }
 
 #search-results a:hover {
-  background-color: #f0f0f0;
+  background-color: rgba(255, 107, 129, 0.1); /* 淡粉紅色懸停背景 */
+  font-weight: bold;
 }
 
 /* 按鈕樣式 */
 #open-modal-btn {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #ff6b81; /* 粉紅色按鈕背景 */
   color: #fff;
   border: none;
   border-radius: 4px;

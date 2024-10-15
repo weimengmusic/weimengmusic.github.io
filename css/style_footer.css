@@ -1,12 +1,13 @@
 footer {
   text-align: center;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.6); /* 半透明黑色 */
-  color: #fff7df;
+  background: rgba(255, 182, 208, 0.8); /* 浅粉色背景 */
 }
 
 footer p {
   margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  color: #fff; /* 标题的颜色 */
 }
 
 footer {
