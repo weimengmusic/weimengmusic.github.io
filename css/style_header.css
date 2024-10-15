@@ -17,16 +17,49 @@ header {
   position: relative;
 }
 
-header .logo2 {
+header .logo3 {
   content: '';
   position: absolute;
-  top: 0;
-  right: 35%;
+  top: 0%; /* 調整至 h1 的中間 */
+  right: 35%; /* 根據需要調整 */
+  width: 150px; /* 設定寬度，根據需要調整 */
+  height: auto; /* 自動調整高度以保持比例 */
   background-repeat: no-repeat;
   border-radius: 0; /* 確保不會變成圓形 */
   opacity: 0; /* 初始不顯示 */
   visibility: hidden; /* 初始不顯示 */
   transition: opacity 0.3s ease, visibility 0.3s ease; /* 添加過渡效果 */
+}
+
+header .logo3_2 {
+  content: '';
+  position: absolute;
+  top: 59%; /* 調整至 h1 的中間 */
+  left: 25%; /* 根據需要調整 */
+  width: 190px; /* 設定寬度，根據需要調整 */
+  height: auto; /* 自動調整高度以保持比例 */
+  background-repeat: no-repeat;
+  border-radius: 0; /* 確保不會變成圓形 */
+  opacity: 0; /* 初始不顯示 */
+  visibility: hidden; /* 初始不顯示 */
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* 添加過渡效果 */
+}
+
+
+header .logo2 {
+  content: '';
+  position: absolute;
+  top: 85%; /* 置於 h1 下面 */
+  right: 50%;
+  width: 200px; /* 設定寬度，根據需要調整 */
+  height: auto; /* 自動調整高度以保持比例 */
+  background-repeat: no-repeat;
+  border-radius: 0; /* 確保不會變成圓形 */
+  opacity: 0; /* 初始不顯示 */
+  visibility: hidden; /* 初始不顯示 */
+  transition: opacity 0.1s ease, visibility 0.1s ease; /* 添加過渡效果 */
+  z-index: 2;
+  pointer-events: none; /* 讓圖片不攔截滑鼠事件 */
 }
 
 /* Header 內容 */
@@ -36,7 +69,7 @@ header .logo2 {
   justify-content: space-between; /* 左邊是標題，右邊是漢堡選單 */
 }
 
-header img {
+header .logo {
   max-width: 150px;
   height: auto;
   border-radius: 100%;
@@ -47,9 +80,11 @@ header h1 {
   z-index: 1; 
 }
 
-/* h1 hover 時顯示 logo2 */
-header h1:hover + .logo2 {
-  opacity: 1; /* 顯示 logo2 */
+/* h1 hover 時顯示 logo2 和 logo3 以及 logo3_2 */
+header h1:hover + .logo2,
+header h1:hover ~ .logo3,
+header h1:hover ~ .logo3_2 { /* 新增這一行 */
+  opacity: 1; /* 顯示 logo2 和 logo3 */
   visibility: visible; /* 設置為可見 */
 }
 

@@ -59,26 +59,28 @@
 /* About 按鈕樣式 */
 .About a {
   text-decoration: none;
-  background: rgba(255, 192, 203, 0.9); /* 粉色背景 */
-  color: #cd6000; /* 文字顏色 */
+  background: #fa91c6; /* 粉色背景 */
+  color: #ffffff; /* 文字顏色 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 增加陰影效果 */
   padding: 5px 10px;
   border-radius: 5px;
   transition: background 0.1s, color 0.1s;
 }
 
 .About a:hover {
-  background: rgba(255, 182, 193, 0.9); /* 懸停時背景顏色 */
-  color: #633000; /* 懸停時文字顏色 */
+  background: #ff69b4; /* 懸停時背景顏色 */
+  color: #ffffff; /* 懸停時文字顏色 */
 }
 
 /* About 圖片樣式 */
 #about-image {
   position: absolute; /* 絕對定位 */
-  top: 90px; /* 距離頂部的距離 */
+  top: 60px; /* 距離頂部的距離 */
   left: 0; /* 左側對齊 */
   width: 100%; /* 圖片寬度 */
   transition: transform 0.5s ease, opacity 0.5s ease; /* 動畫過渡 */
   transform: translateY(-20px); /* 初始位置稍微向上移動 */
+  pointer-events: none; /* 讓圖片不攔截滑鼠事件 */
   opacity: 0; /* 初始透明度 */
 }
 
@@ -151,7 +153,7 @@
 
 .social-links a {
   transition: color 0.2s, background-color 0.2s; /* 連結懸停效果過渡 */
-  color: #cd6000; /* 文字顏色 */
+  color: #a431e7; /* 文字顏色 */
   text-decoration: none; /* 移除下劃線 */
   padding: 5px 10px; /* 內邊距 */
   border-radius: 5px; /* 圓角 */

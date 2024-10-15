@@ -3,12 +3,28 @@
   flex-wrap: wrap; /* 允許元素換行 */
   justify-content: space-around;
   margin: 20px 0;
+  position: relative; /* 使其子元素的定位基於此 */
+}
+
+.large-hover-image {
+  display: none; /* 預設隱藏背景圖片 */
+  position: absolute; /* 絕對定位 */
+  top: 50%; /* 垂直中心 */
+  left: 50%; /* 水平中心 */
+  transform: translate(-50%, -50%); /* 偏移自身的寬高的一半，實現居中 */
+  width: 20%; /* 填滿寬度 */
+  height: auto; /* 自動調整高度 */
+  z-index: -1; /* 確保背景在後面 */
+}
+
+.large-options:hover .large-hover-image {
+  display: block; /* 懸停時顯示背景圖片 */
 }
 
 /* 針對每個選項的樣式 */
 .option {
   position: relative;
-  background-color: rgba(255, 192, 203, 0.1); /* 粉紅色背景 */
+  background-color: #fcf4f8; /* 粉紅色背景 */
   border: 1px solid #ff69b4; /* 粉紅色邊框 */
   border-radius: 8px;
   padding: 20px;
@@ -19,7 +35,7 @@
 }
 
 .option:hover {
-  background-color: rgba(255, 20, 147, 0.1); /* 懸停時顏色 */
+  background-color: #fdecf4; /* 懸停時顏色 */
   transform: translateY(-5px); /* 懸停時上升 */
 }
 

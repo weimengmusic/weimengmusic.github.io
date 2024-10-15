@@ -186,26 +186,6 @@
       height: 100%;
     }
 
-
-    .large-options {
-      display: flex;
-      flex-wrap: wrap; /* 允許元素換行 */
-      justify-content: space-around;
-      margin: 20px 0;
-    }
-    
-    /* 針對每個選項的樣式 */
-    .option {
-      position: relative;
-      background-color: rgba(255, 192, 203, 0.1); /* 粉紅色背景 */
-      border: 1px solid #ff69b4; /* 粉紅色邊框 */
-      border-radius: 8px;
-      padding: 20px;
-      text-align: center;
-      width: 30%; /* 默認為 30% 寬度 */
-      cursor: pointer;
-      transition: background-color 0.3s, transform 0.3s; /* 添加變換效果 */
-    }
     
     .option {
       width: 100%; /* 小型螢幕時每個選項佔 100% 寬度 */
@@ -225,9 +205,13 @@
     header .logo2 {
       display: none; /* 隱藏 logo2 */
     }
+
+    header .logo3_2{
+      left: 50%;
+    }
     
     header img {
-      max-width: 130px;
+      max-width: 100px;
       height: auto;
       border-radius: 100%;
       /* position: fixed;
@@ -340,5 +324,10 @@
       margin: 0 auto; /* 置中顯示 */
       display: block; /* 使圖片成為塊級元素以便於置中 */
       border-radius: 0%; /* 圓角 */
+    }
+
+    .large-hover-image{
+      position: fixed;
+      top: 10%;
     }
   }
