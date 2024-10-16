@@ -16,6 +16,7 @@
 @import url('style_footer.css');
 @import url('weimeng_indexPost.css');
 
+
 /* 響應式設計 */
 @media (max-width: 768px) {
     .post {

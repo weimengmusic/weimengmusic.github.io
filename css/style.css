@@ -173,3 +173,27 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 105, 180, 1); /* 滾動條滑塊懸停顏色 */
 }
+
+
+.newsletter-subscription {
+  background-color: #f9f9f9; /* 背景顏色 */
+  border: 1px solid #e0e0e0; /* 邊框顏色 */
+  border-radius: 8px; /* 圓角 */
+  text-align: center; /* 文字置中 */
+}
+
+.newsletter-subscription p {
+  font-size: 16px; /* 字體大小 */
+  color: #333; /* 文字顏色 */
+  margin: 0; /* 去除默認的邊距 */
+}
+
+.newsletter-subscription a {
+  color: #da005b; /* 超連結顏色 */
+  text-decoration: none; /* 去除下劃線 */
+  font-weight: bold; /* 加粗 */
+}
+
+.newsletter-subscription a:hover {
+  text-decoration: underline; /* 滑鼠懸停時下劃線 */
+}
