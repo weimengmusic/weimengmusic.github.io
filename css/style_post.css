@@ -257,7 +257,7 @@ ol li::marker {
   background-color: #fef7f7; /* 背景顏色 */
   font-size: 17.5px;
   border-radius: 8px; /* 圓角 */
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 15px;
   padding: 0px 10px;
 }

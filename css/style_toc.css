@@ -50,8 +50,8 @@
   color: rgb(176, 0, 141);
   font-weight: bold;
   border: none;
-  padding: 7px 13px; /* 上下 10px，左右 15px */
-  font-size: 24px; /* 調整 Emoji 大小 */
+  padding: 7px 11px; /* 上下 10px，左右 15px */
+  font-size: 30px; /* 調整 Emoji 大小 */
   cursor: pointer;
   z-index: 9999;
   border-radius: 5px;

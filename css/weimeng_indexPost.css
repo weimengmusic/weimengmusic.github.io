@@ -12,7 +12,7 @@
   top: 50%; /* 垂直中心 */
   left: 50%; /* 水平中心 */
   transform: translate(-50%, -50%); /* 偏移自身的寬高的一半，實現居中 */
-  width: 20%; /* 填滿寬度 */
+  width: 19%; /* 填滿寬度 */
   height: auto; /* 自動調整高度 */
   z-index: -1; /* 確保背景在後面 */
 }
@@ -60,10 +60,19 @@
 }
 
 .option:hover .hover-image {
-  bottom: 0px; /* 懸停時圖片顯示位置 */
+  bottom: -20px; /* 懸停時圖片顯示位置 */
   opacity: 1; /* 懸停時顯示圖片 */
   visibility: visible; /* 懸停時可見 */
   transition: bottom 0.3s ease, opacity 0.3s ease, visibility 0s; /* 動畫效果 */
+}
+
+.option ul {
+  text-align: left; /* 將 ul 的文字對齊設為左邊 */
+  padding-left: 20px; /* 可選：增加左側內邊距 */
+}
+
+.option li {
+  text-align: left; /* 確保 li 的文字也左對齊 */
 }
 
 /* 按鈕樣式 */

@@ -49,8 +49,8 @@ header .logo3_2 {
 header .logo2 {
   content: '';
   position: absolute;
-  top: 85%; /* 置於 h1 下面 */
-  right: 50%;
+  top: 25px; /* 置於 h1 下面 */
+  right: 100px;
   width: 200px; /* 設定寬度，根據需要調整 */
   height: auto; /* 自動調整高度以保持比例 */
   background-repeat: no-repeat;
@@ -174,7 +174,7 @@ nav {
   display: none; /* 默認隱藏 */
   position: absolute; /* 絕對定位 */
   top: 100%; /* 從父元素（menu-button）底部開始 */
-  left: 0; /* 與父元素（menu-button）左邊對齊 */
+  left: -100px; /* 與父元素（menu-button）左邊對齊 */
   background: rgba(0, 0, 0, 0.6);
   border: 1px solid #ddd;
   border-radius: 4px;
