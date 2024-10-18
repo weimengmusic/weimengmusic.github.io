@@ -17,10 +17,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const menuToggle = document.querySelector('.menu-toggle');
   const mobileNav = document.querySelector('.mobile-nav');
+  const closeButton = document.querySelector('.close-button');
 
   menuToggle.addEventListener('click', function() {
     // 切換菜單的顯示狀態
     mobileNav.classList.toggle('active');
+  });
+
+  // 點擊關閉按鈕關閉菜單
+  closeButton.addEventListener('click', function() {
+    mobileNav.classList.remove('active');
   });
 });
 
