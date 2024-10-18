@@ -67,11 +67,13 @@
     /* 移動版選單的顯示 */
     .nav-top {
       position: relative; /* 固定在頁面上 */
-      background-color: rgba(255, 139, 197, 0.85); /* 滾動條滑塊顏色 */
+      background-color: rgba(255, 139, 197, 0.89); /* 滾動條滑塊顏色 */
     }
 
     .nav-top li a{
       border: 1px dashed rgba(214, 0, 107, 0.2); /* 滾動條滑塊顏色 */
+      padding: 0px;
+      font-weight: bold;
     }
 
     .mobile-nav.active {
@@ -332,4 +334,43 @@
       position: fixed;
       top: 10%;
     }
+
+
+      /* 整體文章區域 */
+      .posts-container {
+        gap: 10px; /* 文章之间的间距 */
+      }
+  
+      /* 每篇文章的樣式 */
+      .index_post {
+        padding: 15px; /* 減少內邊距以適應小螢幕 */
+      }
+  
+      /* 標題樣式 */
+      .index_post h2 {
+        font-size: 1.4em; /* 減小字體大小 */
+      }
+  
+      /* 文章信息區 */
+      .index_post p {
+        text-align: center; /* 左對齊 */
+        margin: 0px 0; /* 減小外邊距 */
+      }
+  
+      /* 摘要區 */
+      .index_post .excerpt {
+        line-height: 1.5; /* 調整行高 */
+        text-align: left;
+      }
+  
+      /* 讀更多連結 */
+      .index_post .read-more {
+        display: none;
+      }
+  
+      /* 標籤和類別樣式 */
+      .post-tags,
+      .post-categories {
+        margin: 3px 0; /* 減少外邊距 */
+      }
   }
