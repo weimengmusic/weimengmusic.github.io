@@ -136,10 +136,7 @@
       font-size: 30px; /* 減少字體大小 */
     }
 
-    #sidebar {
-      width: 220px; /* 在小屏幕上縮小側邊欄的寬度 */
-      background-color: rgb(248, 237, 239);
-    }
+    
 
 
     .toc {
@@ -295,7 +292,7 @@
     }
 
     #sidebar {
-      width: 210px; /* 在更小屏幕上進一步縮小側邊欄的寬度 */
+      width: 230px; /* 在更小屏幕上進一步縮小側邊欄的寬度 */
     }
 
     #sidebar #close-btn {
