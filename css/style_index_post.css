@@ -83,6 +83,7 @@
 .post-count {
   color: #fffee5; /* 設定字體顏色 */
   text-align: center; /* 文字置中 */
+  background-color: rgba(101, 28, 28, 0.35);;
 }
 
 

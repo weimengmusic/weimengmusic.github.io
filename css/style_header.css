@@ -127,6 +127,9 @@ header h1 a:hover::after {
   transform: translateX(-50%) scaleX(1); /* 在 hover 時顯示底部線條 */
 }
 
+header .close-button {
+  display: none;
+}
 
 /* 導航樣式 */
 nav {

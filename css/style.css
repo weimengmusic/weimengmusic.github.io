@@ -131,12 +131,13 @@ body {
   width: 26px; /* 增加寬度 */
   height: 26px; /* 增加高度 */
   border-radius: 50%; /* 圓形 */
-  background: rgba(255, 105, 180, 0.4); /* 調整透明度，降低至 0.4 */
+  background: rgba(255, 105, 180, 0.3); /* 調整透明度，降低至 0.4 */
   border: 2px solid rgba(255, 255, 255, 0.4); /* 調整邊框的透明度 */
   box-shadow: 0 0 15px rgba(0, 191, 255, 0.5), 0 0 30px rgba(255, 105, 180, 0.5); /* 添加雙重陰影效果 */
   pointer-events: none; /* 讓這個元素不會阻止滑鼠事件 */
   transition: transform 0.2s ease, opacity 0.2s ease, background 0.3s ease; /* 增加背景顏色變化 */
   animation: pulse 1.5s infinite; /* 添加脈動動畫 */
+  z-index: 2;
 }
 
 /* 增加動畫效果 */
