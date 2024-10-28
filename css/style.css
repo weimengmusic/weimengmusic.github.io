@@ -38,11 +38,11 @@ body {
 
 .home-intro {
     position: relative;
-    padding: 50px 0px;
+    padding: 10px 0px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: #ffffff;
+    color: #000000;
     overflow: hidden;
 }
 
@@ -94,10 +94,12 @@ body {
 
 .welcome-desktop {
   display: block; /* 預設為顯示 */
+  color: #fff;
 }
 
 .welcome-mobile {
   display: none; /* 預設為隱藏 */
+  color: #fff;
 }
 
 

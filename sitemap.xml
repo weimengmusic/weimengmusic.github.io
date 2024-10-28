@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://weimengmusic.github.io/2024/09/09/%E5%B4%B4%E5%AD%9F%E5%B9%B8%E7%A6%8F%E7%A4%BE%E7%BE%A4/</loc>
+    
+    <lastmod>2024-10-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://weimengmusic.github.io/2024/09/09/%E5%B4%B4%E5%AD%9F%E5%B9%B8%E7%A6%8F%E6%9C%8D%E5%8B%99/</loc>
     
     <lastmod>2024-10-21</lastmod>
@@ -22,7 +31,7 @@
 
   <url>
     <loc>https://weimengmusic.github.io/</loc>
-    <lastmod>2024-10-24</lastmod>
+    <lastmod>2024-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -30,14 +39,28 @@
   
   <url>
     <loc>https://weimengmusic.github.io/tags/%E9%9F%B3%E6%A8%82/</loc>
-    <lastmod>2024-10-24</lastmod>
+    <lastmod>2024-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://weimengmusic.github.io/tags/%E7%A5%9D%E7%A6%8F%E5%BD%B1%E7%89%87/</loc>
-    <lastmod>2024-10-24</lastmod>
+    <lastmod>2024-10-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://weimengmusic.github.io/tags/%E7%A4%BE%E7%BE%A4/</loc>
+    <lastmod>2024-10-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://weimengmusic.github.io/tags/%E7%A4%BE%E5%9C%98/</loc>
+    <lastmod>2024-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -46,7 +69,14 @@
   
   <url>
     <loc>https://weimengmusic.github.io/categories/%E6%9C%8D%E5%8B%99/</loc>
-    <lastmod>2024-10-24</lastmod>
+    <lastmod>2024-10-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://weimengmusic.github.io/categories/%E7%A4%BE%E7%BE%A4/</loc>
+    <lastmod>2024-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
