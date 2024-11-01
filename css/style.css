@@ -79,8 +79,9 @@ body {
 .home-intro h2 {
     font-size: 1.5em;
     margin-bottom: 5px;
-    color: #ffd8e3;
+    color: #d78ca1;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+    /* background-color: rgba(254, 205, 205, 0.2); */
     animation: textPulse 1.5s ease infinite; /* 添加文本脈動動畫 */
 }
 
@@ -91,15 +92,17 @@ body {
     100% { text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2); }
 }
 
-
+/* 標題樣式 P  */
 .welcome-desktop {
-  display: block; /* 預設為顯示 */
+  display: block; /* 預設為顯示 p*/
   color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .welcome-mobile {
-  display: none; /* 預設為隱藏 */
+  display: none; /* 預設為隱藏 p*/
   color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 
