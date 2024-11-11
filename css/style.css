@@ -19,12 +19,6 @@ body {
   background-attachment: fixed; /* 使背景圖片固定 */
 }
 
-.archive_bg {
-  background-size: auto 90%; /* 設置背景圖片的大小 */
-  background-position: calc(100% - 10px) 100%; /* 調整背景圖片的位置 */
-  background-repeat: no-repeat; /* 不重複背景圖片 */
-  background-attachment: fixed; /* 使背景圖片固定 */
-}
 
 .posts-container{
   background-position: right bottom; /* 針對 index 的背景圖片位置 */

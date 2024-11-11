@@ -150,7 +150,7 @@ nav {
   align-items: center;
   gap: 10px;
   z-index: 1000;
-  border-radius: 25px; /* 添加圓角，讓邊緣看起來更柔和 */
+  border-radius: 0px; /* 添加圓角，讓邊緣看起來更柔和 */
 }
 
 .nav-top li {

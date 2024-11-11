@@ -1,8 +1,8 @@
 /* Archives 的主要區域 */
 main {
-  max-width: 800px; /* 控制內容的最大寬度 */
-  margin: 0 auto; /* 垂直居中內容 */
-  padding: 20px; /* 內邊距 */
+  max-width: 80%; /* 使主內容區域的最大寬度為100% */
+  margin: 0; /* 去掉外邊距 */
+  padding: 20px; /* 內邊距可以根據需求調整 */
   background: linear-gradient(135deg, #f9f9f9, #e3f2fd); /* 漸變背景 */
   border-radius: 12px; /* 圓角 */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* 陰影 */
@@ -14,53 +14,62 @@ main:hover {
 }
 
 /* Archives 標題樣式 */
-main h2 {
-  font-size: 1.8em; /* 標題字體大小 */
-  color: #641919; /* 標題顏色 */
-  border-bottom: 1px dashed #0c3559; /* 底部邊框 */
+.year-title {
+  font-size: 2em; /* 更大的字體 */
+  color: #333; /* 深色 */
+  border-bottom: 2px solid #0c3559; /* 更粗的底部邊框 */
   text-align: center; /* 標題居中對齊 */
-  text-transform: uppercase; /* 標題字母大寫 */
+  text-transform: uppercase; /* 大寫 */
   letter-spacing: 1px; /* 標題字母間距 */
+  cursor: pointer; /* 手形指標 */
+  margin: 20px 0; /* 額外的上下邊距 */
+  padding: 10px; /* 內邊距 */
+  transition: background-color 0.3s; /* 背景顏色過渡效果 */
 }
 
-/* 文章列表樣式 */
-main ul {
-  list-style: none; /* 去掉列表前的符號 */
+.year-title:hover {
+  background-color: #bde0fa; /* 懸停顏色 */
+}
+
+/* Archives文章列表樣式 */
+main .post-list {
+  display: flex; /* 使用 Flexbox */
+  flex-wrap: wrap; /* 允許換行 */
+  margin: -10px; /* 調整間距 */
   padding: 0; /* 去掉內邊距 */
-  margin: 0; /* 去掉外邊距 */
 }
 
-main ul li {
-  padding: 4px 4px 4px 4px; /* 內邊距 */
+main .post-item {
+  flex: 1 0 calc(50% - 20px); /* 每個項目佔用約50%的寬度，留出間距 */
+  padding: 15px; /* 內邊距 */
   border-radius: 8px; /* 圓角 */
-  border: 1px solid #ddd; /* 列表項目分隔線 */
+  border: 1px solid #ddd; /* 分隔線 */
   background: #ffffff; /* 背景顏色 */
-  margin-bottom: 5px; /* 列表項目下方間距 */
+  margin: 10px; /* 添加間距 */
   transition: background-color 0.3s ease, transform 0.3s ease; /* 背景顏色和變形過渡效果 */
 }
 
-main ul li:hover {
+main .post-item:hover {
   background-color: #e8f5e9; /* 懸停背景顏色 */
   transform: translateY(-3px); /* 懸停時微微上浮效果 */
 }
 
-main ul li:last-child {
-  border-bottom: none; /* 去掉最後一項的分隔線 */
-}
-
-main ul li a {
+main .post-item a {
   color: #1e88e5; /* 文章標題顏色 */
   text-decoration: none; /* 去掉下劃線 */
   font-size: 1.2em; /* 文章標題字體大小 */
+  font-weight: bold; /* 加粗標題 */
+  display: block; /* 讓整個區域都能點擊 */
+  margin-bottom: 5px; /* 標題與日期間距 */
 }
 
-main ul li a:hover {
+main .post-item a:hover {
   text-decoration: underline; /* 懸停時顯示下劃線 */
   color: #003c71; /* 懸停顏色 */
 }
 
 /* 文章日期樣式 */
-main ul li span.date {
+main .post-item span.date {
   color: #888; /* 日期顏色 */
   font-style: italic; /* 日期斜體 */
   font-size: 0.9em; /* 日期字體大小 */

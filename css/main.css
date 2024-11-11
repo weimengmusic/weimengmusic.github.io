@@ -59,7 +59,8 @@
   
     /* Archives 主內容 */
     main {
-      padding: 10px;
+      padding: 5px;
+      max-width: 98%; /* 使主內容區域的最大寬度為100% */
     }
 
     
