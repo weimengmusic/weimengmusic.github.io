@@ -96,8 +96,8 @@
       display: none; /* 初始隱藏 */
       position: fixed; /* 使用固定定位 */
       top: 50px; /* 調整為適合的距離 */
-      right: 20px; /* 調整為適合的距離 */
-      width: 90%; /* 設置為螢幕的 90% 寬度 */
+      right: 10px; /* 調整為適合的距離 */
+      width: 95%; /* 設置為螢幕的 90% 寬度 */
       /* max-width: 300px; 最大寬度限制 */
       background: #fff;
       border: 1px solid #ddd;

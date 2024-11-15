@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
     img.style.position = 'absolute'; // 使圖片絕對定位
     
     // 設置圖片在游標旁邊的位置
-    img.style.left = `${x + 5}px`; // 向右偏移10像素
+    img.style.left = `${x - 25}px`; // 向右偏移10像素
     img.style.top = `${y - 25}px`; // 向上偏移25像素（根據圖片大小調整）
     
     // 設置圖片大小
