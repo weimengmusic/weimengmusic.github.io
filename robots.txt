@@ -1,0 +1,11 @@
+# 這個文件告訴搜索引擎爬蟲哪些頁面可以抓取，哪些不可以
+
+User-agent: *
+# 禁止訪問的目錄
+Disallow: /tags/
+
+# 允許訪問的頁面
+Allow: /
+
+# 指向 sitemap 的位置
+Sitemap: https://weimengmusic.github.io/sitemap.xml

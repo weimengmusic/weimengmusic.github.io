@@ -22,7 +22,7 @@
 
 <meta name="generator" content="Hexo 7.3.0"></head>
 <body>
-  <div class="post_bg" style="">
+  <div class="post_bg" style="background-image: url(&#39;https://weimengmusic.github.io/images/boy0.png&#39;);">
     <div class="archive_bg" style="">
       
       <header>
@@ -131,74 +131,49 @@
   </div>
 </div>
         
-<!-- 限制每頁顯示的文章數量 -->
-
-
-
-<!-- index.ejs -->
-<div id="home" class="container home-intro">
-  <img src="https://weimengmusic.github.io/images/a2.png" alt="Welcome Image" class="home-image">
-  <!-- <h2>歡迎來到崴孟網站</h2> -->
-  <!-- 桌面版本 -->
-  <p class="welcome-desktop">在這裡你可以了解我們的音樂創作和程式設計。崴孟期待與你分享我們的作品，並提供幸福服務。</p>
-  <!-- 手機版本 -->
-  <p class="welcome-mobile">在這裡你可以了解我們的音樂創作和程式設計。崴孟期待與你分享我們的作品，並提供幸福服務。</p>
+<article class="post">
+  <h1></h1>
+  <!-- <p class="post-date">日期：Fri Nov 15 2024 02:43:58 GMT+0000</p> -->
+  <p class="post-date">日期：2024-11-15</p>
+  <!-- <p class="post-author">作者：</p> -->
   
-  <!-- 大選項 -->
-  <div class="large-options">
-    <img src="https://weimengmusic.github.io/images/boy17.png" class="large-hover-image" alt="部落格圖片">
-    <div class="option">
-      <div onclick="location.href='/service/'">
-        <h2>崴孟幸福服務</h2>
-        <p>了解我們的各種幸福崴孟服務。</p>
-        <ul>
-          <li>音樂祝福錄製 / 音樂創作 / 音樂教學 / 感情課程</li>
-        </ul>
-        <button class="cta-button" onclick="location.href='/social/'">立即了解</button>
+  
+
+  <!-- 目錄容器 -->
+  <div class="article-container">
+    <div class="article-content">
+      <div class="newsletter-subscription">
+        <p>覺得我們的內容實用嗎？ 崴崴孟孟 - WeiMengMusic 電子報讀者募集中！歡迎
+          <a href="https://weimengmusic.ck.page/7378a4d43a" target="_blank">訂閱電子報</a>！</p>
       </div>
-      <img src="https://weimengmusic.github.io/images/2.png" class="hover-image" alt="部落格圖片">
+      google-site-verification: google4584d6c12ae645dc.html
     </div>
-    <div class="option">
-      <div onclick="location.href='/social/'">
-        <h2>崴孟幸福社群</h2>
-        <p>一起幸福討論。</p>
-        <ul>
-          <li>訂閱崴孟的 電子報 和 加入崴孟的 Discord 社團</li>
-        </ul>
-        <button class="cta-button" onclick="location.href='/2024/09/09/崴孟幸福服務/'">立即了解</button>
-      </div>
-      <img src="https://weimengmusic.github.io/images/2.png" class="hover-image" alt="部落格圖片">
+    <div id="toc" class="toc">
+      <ul></ul>
     </div>
-    <!-- <div class="option">
-      <div onclick="location.href='https://weitsung50110.github.io/2024/01/01/崴寶程式教學線上課程/'">
-        <h2>崴孟程式教學</h2>
-        <p>學習程式設計和技術的精彩教程。</p>
-        <p>提供的課程包括：</p>
-        <ul>
-          <li>架設網站 / 前端與後端開發 / APP開發 / 遊戲開發 / 機器學習</li>
-        </ul>
-        <button class="cta-button">立即學習</button>
-      </div>
-      <img src="https://weimengmusic.github.io/images/2.png" class="hover-image" alt="部落格圖片">
-    </div> -->
+  </div>
+  
+  <button id="toc-toggle-btn" class="toc-toggle-btn">📖</button>
+
+  <div id="gitalk-p">
+    <p>喜歡 崴崴孟孟 的文章嗎？在這裡留下你的評論！本留言區支援 <a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax" target="_blank">Markdown 語法</a>。</p>
   </div>
 
-</div>
-
-
-<iframe 
-  width="100%" 
-  height="auto" 
-  style="aspect-ratio: 16 / 9;" 
-  src="https://www.youtube.com/embed/U6pr59PRwO4?si=e4SM2pXQ-r0I1cRI" 
-  title="YouTube video player" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-  referrerpolicy="strict-origin-when-cross-origin" 
-  allowfullscreen>
-</iframe>
-
-<div id="cursor-effect" class="cursor-effect"></div>
+  <div id="gitalk-container"></div>
+  <script src="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+  <script>
+    var gitalk = new Gitalk({
+      clientID: 'Ov23li4EVPGAxWX9Gmh4',
+      clientSecret: '33dfdf7a7e58d312f5405e74757cb02ab930336d',  // 替換為最新的 client secret
+      repo: 'weimengmusic.github.io',
+      owner: 'weimengmusic',
+      admin: ['weimengmusic'],
+      id: location.pathname.slice(0, 50),
+      distractionFreeMode: false
+    });
+    gitalk.render('gitalk-container');
+  </script>
+</article>
  
       </div>
       
