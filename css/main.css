@@ -18,7 +18,7 @@
 
 
 /* 響應式設計 */
-@media (max-width: 768px) {
+@media (max-width: 820px) {
     .post {
       max-width: 100%; 
       width: 100%; /* 手機模式目錄不會直接跳出 因此可以直接滿版 */
@@ -217,12 +217,24 @@
   }
   
   @media (max-width: 480px) {
+    /* 標題樣式 */
+    .post h1 {
+      font-size: 2em;
+      margin-top: 0em; /* 調整標題與上方內容的距離 */
+      margin-bottom: 0.1em; /* 調整標題與下方內容的距離 */
+      padding: 0px;
+    }
+
+    .post h2 {
+      font-size: 1.8em;
+    }
+
     .home-intro h2 {
       font-size: 1.2em; /* 手機屏幕的字體大小 */
     }
   
     header h1 {
-      font-size: 1.33em; /* 根據需要調整 */
+      font-size: 1.2em; /* 根據需要調整 */
     }
 
     header .logo2 {
