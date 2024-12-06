@@ -305,3 +305,6 @@ cen:hover{
 }
 
 
+.post-tags-margin, .post-categories-margin {
+  margin: 0px 0px; /* 加一些外邊距 */
+}
