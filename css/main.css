@@ -37,11 +37,11 @@
     }
 
     header h1 {
-      font-size: 1.2em; /* 根據需要調整 */
+      font-size: 1.1em; /* 根據需要調整 */
     }
 
     header .logo {
-      width: 120px;
+      width: 30%;
     }
 
     header .logo2 {
@@ -90,12 +90,27 @@
 
     .menu-toggle {
       display: block;
-  }
+      height: 70px;
+      margin-top: 7%;
+    }
+
+    /* 透明灰背景效果 */
+    .overlay-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.5); /* 半透明灰色 */
+      z-index: 999; /* 比 mobile-nav 還低或一樣 */
+    }
+
+  
     
     .mobile-nav {
       display: none; /* 初始隱藏 */
       position: fixed; /* 使用固定定位 */
-      top: 50px; /* 調整為適合的距離 */
+      top: 150px; /* 調整為適合的距離 */
       right: 10px; /* 調整為適合的距離 */
       width: 95%; /* 設置為螢幕的 90% 寬度 */
       /* max-width: 300px; 最大寬度限制 */
@@ -130,7 +145,7 @@
       cursor: pointer;
       position: absolute;
       top: -50px;
-      right: 50px;
+      right: 0px;
     }
 
     .nav-menu {
