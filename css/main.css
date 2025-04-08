@@ -75,15 +75,41 @@
       background-color: rgba(255, 139, 197, 0.89); /* 滾動條滑塊顏色 */
       display: flex; /* 使用彈性布局 */
       flex-wrap: wrap; /* 讓項目換行 */
-      justify-content: flex-start; /* 項目靠左對齊 */
+      justify-content: space-between; /* ✅ 調整為平均分布 */
+      max-height: 200px; /* 限制高度，避免太長 */
+      overflow-y: auto; /* 超出時垂直捲動 */
+      overflow-x: hidden;
+      padding: 5px;
+      gap: 5px;
+      width: 100%;
     }
 
-    .nav-top li a{
-      /* border: 1px dashed rgba(214, 0, 107, 0.4); 滾動條滑塊顏色 */
-      padding: 0px;
+    .nav-top li {
+      flex: 0 0 calc(33.33% - 7px); /* 考慮 gap 空間 */
+      box-sizing: border-box;
+    }
+
+    .nav-top li a {
+      display: block;
+      padding: 0px 22px; /* ✅ 按鈕內部更大 */
+      font-size: 1.1em;
       font-weight: bold;
+      text-align: center;
+      border: 3px dashed rgba(255, 255, 255, 0.4);
+      border-radius: 10px;
+      background-color: rgb(168, 31, 68);
+      color: #ffffff;
     }
-
+    
+    .nav-top li a:hover {
+      background-color: rgb(200, 50, 90); /* 背景色變亮一點 */
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.6); /* 邊框變更明亮 */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 加入陰影 */
+      transform: translateY(-2px); /* 輕微上移，像浮起來 */
+      transition: all 0.2s ease; /* 平滑過渡效果 */
+    }
+    
     .mobile-nav.active {
         display: block; /* 顯示菜單 */
     }
@@ -119,22 +145,6 @@
       border-radius: 4px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       z-index: 1000;
-    }
-    
-    .mobile-nav ul li {
-        display: block;
-        margin: 1px 5px 1px 5px;
-        border: 2px dashed #ffffff; /* 滾動條滑塊顏色 */
-        height: 50px; /* 每行文字高度固定為 24px */
-        /* padding: 7px 0px 0px 0px; 調整內邊距，讓上下距離一致 */
-    }
-    
-    .mobile-nav ul li a {
-        display: block;
-        padding: 10px;
-        color: #ffffff;
-        text-decoration: none;
-        white-space: nowrap; /* 防止內容換行 */
     }
 
     header .close-button {
@@ -421,3 +431,21 @@
         margin: 3px 0; /* 減少外邊距 */
       }
   }
+
+
+  .dropdown_section a {
+    display: block;
+    padding: 8px 12px;
+    margin: 4px 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+  }
+  
+  .dropdown_section a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
