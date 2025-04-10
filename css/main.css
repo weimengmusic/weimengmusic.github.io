@@ -41,7 +41,7 @@
     }
 
     header .logo {
-      width: 30%;
+      width: 25%;
     }
 
     header .logo2 {
@@ -116,8 +116,8 @@
 
     .menu-toggle {
       display: block;
-      height: 70px;
-      margin-top: 7%;
+      height: 80px;
+      margin-top: 12%;
     }
 
     /* 透明灰背景效果 */
@@ -160,7 +160,7 @@
 
     .nav-menu {
       position: fixed; /* 固定定位 */
-      top: 200px; /* 調整下拉選單距離頂部的位置 */
+      top: 250px; /* 調整下拉選單距離頂部的位置 */
       right: 0;
       left: 0;
     }
@@ -188,6 +188,7 @@
       bottom: 65px;
       padding: 5px 8px; /* 上下 10px，左右 15px */
       background-color: rgba(0, 0, 0, 0.02); /* 恢復原本的背景色 */
+      display: none;
     }
 
     .toc-toggle-btn:hover {
