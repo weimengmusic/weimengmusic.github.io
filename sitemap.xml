@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://weimengmusic.github.io/social/index.html</loc>
+    <loc>https://weimengmusic.com/social/index.html</loc>
     
     <lastmod>2025-05-01</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://weimengmusic.github.io/service/index.html</loc>
+    <loc>https://weimengmusic.com/service/index.html</loc>
     
     <lastmod>2025-04-16</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://weimengmusic.github.io/2025/%E5%B4%B4%E5%AD%9F%E7%AC%AC%E4%BA%8C%E7%AF%87/</loc>
+    <loc>https://weimengmusic.com/2025/%E5%B4%B4%E5%AD%9F%E7%AC%AC%E4%BA%8C%E7%AF%87/</loc>
     
     <lastmod>2025-04-08</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://weimengmusic.github.io/googlea958ac8bc94d9f5b.html</loc>
+    <loc>https://weimengmusic.com/googlea958ac8bc94d9f5b.html</loc>
     
     <lastmod>2025-03-19</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://weimengmusic.github.io/2024/%E5%B4%B4%E5%AD%9F%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</loc>
+    <loc>https://weimengmusic.com/2024/%E5%B4%B4%E5%AD%9F%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</loc>
     
     <lastmod>2025-03-13</lastmod>
     
@@ -47,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://weimengmusic.github.io/about/index.html</loc>
+    <loc>https://weimengmusic.com/about/index.html</loc>
     
     <lastmod>2025-03-13</lastmod>
     
@@ -57,23 +57,23 @@
   
 
   <url>
-    <loc>https://weimengmusic.github.io/</loc>
-    <lastmod>2025-05-01</lastmod>
+    <loc>https://weimengmusic.com/</loc>
+    <lastmod>2025-05-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://weimengmusic.github.io/tags/%E7%AC%AC%E4%B8%80%E7%AF%87/</loc>
-    <lastmod>2025-05-01</lastmod>
+    <loc>https://weimengmusic.com/tags/%E7%AC%AC%E4%B8%80%E7%AF%87/</loc>
+    <lastmod>2025-05-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://weimengmusic.github.io/tags/%E7%AC%AC%E4%BA%8C%E7%AF%87/</loc>
-    <lastmod>2025-05-01</lastmod>
+    <loc>https://weimengmusic.com/tags/%E7%AC%AC%E4%BA%8C%E7%AF%87/</loc>
+    <lastmod>2025-05-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -81,15 +81,15 @@
 
   
   <url>
-    <loc>https://weimengmusic.github.io/categories/%E7%AC%AC%E4%B8%80%E7%AF%87/</loc>
-    <lastmod>2025-05-01</lastmod>
+    <loc>https://weimengmusic.com/categories/%E7%AC%AC%E4%B8%80%E7%AF%87/</loc>
+    <lastmod>2025-05-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://weimengmusic.github.io/categories/%E7%AC%AC%E4%BA%8C%E7%AF%87/</loc>
-    <lastmod>2025-05-01</lastmod>
+    <loc>https://weimengmusic.com/categories/%E7%AC%AC%E4%BA%8C%E7%AF%87/</loc>
+    <lastmod>2025-05-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
