@@ -249,6 +249,7 @@
       width: 100%; /* 小型螢幕時每個選項佔 100% 寬度 */
       margin-bottom: 20px; /* 選項間距 */
     }
+
   }
   
   @media (max-width: 480px) {

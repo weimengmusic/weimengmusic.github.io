@@ -108,3 +108,53 @@
   background-color: #ff3f55; /* 更深的粉紅色 */
   transform: scale(1.05); /* 按鈕懸停時稍微放大 */
 }
+
+
+.meng-carousel-wrapper {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  background: #fff0f5;
+  border-radius: 12px;
+  padding: 20px 10px;
+  margin: 40px auto;
+  max-width: 100%;
+  cursor: grab;
+  scroll-behavior: smooth;
+}
+
+.meng-carousel-wrapper.dragging {
+  cursor: grabbing;
+  scroll-behavior: auto; /* 拖曳時禁用平滑 */
+}
+
+
+.meng-carousel {
+  display: flex;
+  gap: 16px;
+}
+
+.carousel-img {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  scroll-snap-align: center;
+  transition: transform 0.3s ease;
+  pointer-events: auto;
+}
+
+.carousel-img:hover {
+  transform: scale(1.05);
+}
+
+.meng-carousel-wrapper {
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE & Edge */
+}
+
+.meng-carousel-wrapper::-webkit-scrollbar {
+  display: none; /* Chrome & Safari */
+}
