@@ -1,60 +1,80 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // 取得 DOM 元素
-  const navMenu = document.querySelector('.nav-menu'); // 下拉選單容器
-  const menuButton = document.querySelector('.menu-button'); // 點擊展開下拉選單的按鈕
-  const menuToggle = document.querySelector('.menu-toggle'); // ☰ 漢堡選單按鈕
-  const mobileNav = document.querySelector('.mobile-nav'); // 移動版選單區塊
-  const closeButton = document.querySelector('.close-button'); // 關閉選單按鈕 ✖
-  const overlay = document.getElementById('press_show_cute'); // 半透明灰背景容器
+  // 取得所有 .menu-button（下拉選單的點擊按鈕）
+  const menuButtons = document.querySelectorAll('.dropdown .menu-button');
 
-  // 點擊「下拉選單按鈕」時，顯示或隱藏下拉選單（nav-menu）
-  menuButton.addEventListener('click', (event) => {
-    event.stopPropagation(); // 防止點擊事件傳播到 document（避免馬上關閉選單）
-    navMenu.classList.toggle('show'); // 切換下拉選單的顯示/隱藏狀態
+  // 移動版選單容器（側邊欄）
+  const mobileNav = document.querySelector('.mobile-nav');
+
+  // ☰ 漢堡選單按鈕
+  const menuToggle = document.querySelector('.menu-toggle');
+
+  // ✖ 關閉選單按鈕
+  const closeButton = document.querySelector('.close-button');
+
+  // 灰色半透明背景區域（點它可關閉選單）
+  const overlay = document.getElementById('press_show_cute');
+
+  // 🔽 綁定所有下拉選單按鈕的點擊事件
+  menuButtons.forEach(button => {
+    button.addEventListener('click', (event) => {
+      event.stopPropagation(); // 阻止事件向上冒泡，避免觸發整頁關閉行為
+
+      const menu = button.nextElementSibling; // 取得這個按鈕下方的對應選單（.popup-menu.nav-menu）
+
+      // 關閉所有其他已開啟的下拉選單
+      document.querySelectorAll('.popup-menu.nav-menu').forEach(m => {
+        if (m !== menu) m.classList.remove('show');
+      });
+
+      // 切換目前這個選單的顯示狀態
+      menu.classList.toggle('show');
+    });
   });
 
-  // 點擊畫面其他地方時，隱藏下拉選單
+  // ❌ 點擊畫面任意區域時，自動關閉所有下拉選單
   document.addEventListener('click', () => {
-    navMenu.classList.remove('show'); // 強制隱藏選單
+    document.querySelectorAll('.popup-menu.nav-menu').forEach(menu => {
+      menu.classList.remove('show');
+    });
   });
 
-  // 點擊 ☰ 漢堡選單按鈕時，顯示 mobileNav 並加上透明灰背景
-  menuToggle.addEventListener('click', function() {
+  // ☰ 點擊漢堡選單時，開啟 mobileNav 與灰色背景
+  menuToggle.addEventListener('click', function () {
     mobileNav.classList.add('active'); // 顯示移動版選單
-    overlay.classList.add('overlay-background'); // 加上灰背景樣式（半透明）
+    overlay.classList.add('overlay-background'); // 顯示遮罩背景
   });
 
-  // 點擊 ✖ 關閉按鈕時，隱藏選單和灰背景
-  closeButton.addEventListener('click', function() {
-    mobileNav.classList.remove('active'); // 隱藏移動版選單
-    overlay.classList.remove('overlay-background'); // 移除灰背景
+  // ✖ 點擊關閉按鈕時，關閉選單與背景
+  closeButton.addEventListener('click', function () {
+    mobileNav.classList.remove('active');
+    overlay.classList.remove('overlay-background');
   });
 
-  // 點擊透明灰背景時，也要關閉選單和背景
+  // 🕳️ 點擊灰色背景時，也要關閉選單與背景
   overlay.addEventListener('click', () => {
-    mobileNav.classList.remove('active'); // 隱藏選單
-    overlay.classList.remove('overlay-background'); // 隱藏背景
+    mobileNav.classList.remove('active');
+    overlay.classList.remove('overlay-background');
   });
 
-  // 點擊 header 任意位置，顯示圖片（你原本的小圖圖點擊特效）
+  // 💖 點擊 header 任意區域時，顯示一張圖片（愛心）
   const header = document.querySelector('header');
 
   header.addEventListener('click', (event) => {
-    const x = event.clientX; // 滑鼠點擊位置的 X 座標
-    const y = event.clientY; // 滑鼠點擊位置的 Y 座標
+    const x = event.clientX; // 點擊位置的 X 座標
+    const y = event.clientY; // 點擊位置的 Y 座標
 
-    // 創建圖片元素
+    // 建立圖片元素
     const img = document.createElement('img');
-    img.src = '/images/3.png'; // 設定圖片來源
-    img.style.position = 'absolute'; // 絕對定位
-    img.style.left = `${x - 25}px`; // 將圖片置於點擊位置附近
+    img.src = '/images/3.png'; // 愛心圖片路徑（可自訂）
+    img.style.position = 'absolute';
+    img.style.left = `${x - 25}px`; // 將圖片置中顯示在點擊位置
     img.style.top = `${y - 25}px`;
-    img.style.width = '50px'; // 設定圖片寬高
+    img.style.width = '50px';
     img.style.height = '50px';
 
-    overlay.appendChild(img); // 將圖片加入 overlay 容器中（層級較高）
+    overlay.appendChild(img); // 把圖片加進 overlay（遮罩層級較高）
 
-    // 設定 800ms 後自動移除圖片
+    // 設定 800 毫秒後移除圖片
     setTimeout(() => {
       img.remove();
     }, 800);

@@ -250,6 +250,12 @@
       margin-bottom: 20px; /* 選項間距 */
     }
 
+    /* 💗 愛心動畫靠近標題 */
+    .floating-heart {
+      top: 65px; /* 根據你標題位置微調 */
+      left: 75%; /* 可依標題長度微調位置 */
+    }
+
   }
   
   @media (max-width: 480px) {

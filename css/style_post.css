@@ -22,7 +22,7 @@
 /* 標題樣式 */
 .post h1 {
   font-size: 2.5em;
-  margin-top: 1em; /* 調整標題與上方內容的距離 */
+  margin-top: 0em; /* 調整標題與上方內容的距離 */
   margin-bottom: 0.1em; /* 調整標題與下方內容的距離 */
   color: #222;
   text-align: left; /* 標題左對齊 */
@@ -307,4 +307,29 @@ cen:hover{
 
 .post-tags-margin, .post-categories-margin {
   margin: 0px 0px; /* 加一些外邊距 */
+}
+
+.button-group {
+  display: flex;
+  gap: 5px;
+  margin: 5px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button-group a {
+  text-decoration: none;
+  background-color: #ff66a5;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button-group a:hover {
+  background-color: #e05591;
+  color: white;
+  transform: scale(1.05);
 }
