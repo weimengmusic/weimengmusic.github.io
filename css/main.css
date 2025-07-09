@@ -195,9 +195,6 @@
       -webkit-overflow-scrolling: touch; /* ✅ 對 iOS Safari 很重要 */
     }
 
-    .nav-bottom {
-      display: none;
-    }
 
 
     #open-btn {
