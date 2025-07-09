@@ -77,6 +77,22 @@
     
 
     /* 移動版選單的顯示 */
+    .popup-menu.nav-menu {
+      left: 0 !important;
+      right: 0 !important;
+      width: 100vw !important;
+      max-width: 100vw !important;
+      border-radius: 0 !important;
+      padding: 16px 20px;
+      box-sizing: border-box;
+    }
+
+    .popup-menu.nav-menu a {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+
     .nav-top {
       position: relative; /* 固定在頁面上 */
       background-color: rgba(255, 139, 197, 0.89); /* 滾動條滑塊顏色 */
