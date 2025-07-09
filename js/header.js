@@ -17,38 +17,20 @@ document.addEventListener('DOMContentLoaded', function () {
   // 🔽 綁定所有下拉選單按鈕的點擊事件
   menuButtons.forEach(button => {
     button.addEventListener('click', (event) => {
-      event.preventDefault();
-      event.stopPropagation();
+      event.preventDefault();  // ⭐⭐新增這行
+      event.stopPropagation(); // 阻止事件向上冒泡，避免觸發整頁關閉行為
 
-      const menu = button.nextElementSibling;
+      const menu = button.nextElementSibling; // 取得這個按鈕下方的對應選單（.popup-menu.nav-menu）
 
-      // ✅ 把 menu 從原本的 .mobile-nav 移到 <body>
-      if (!document.body.contains(menu)) {
-        document.body.appendChild(menu);
-      }
-
-      // ✅ 取得按鈕在畫面的位置
-      const rect = button.getBoundingClientRect();
-
-      // ✅ 定位 dropdown 在按鈕下方
-      menu.style.position = 'fixed';
-      menu.style.top = `${rect.bottom}px`;
-    // ✅ 改為靠「left」對齊 button 左邊
-      menu.style.left = `${rect.left-500}px`;
-      menu.style.right = 'auto'; // 保險起見，移除右側對齊
-      menu.style.width = 'auto'; // 讓它根據內容寬度自動決定
-      menu.style.zIndex = '9999';
-
-      // ✅ 關閉其他 dropdown
+      // 關閉所有其他已開啟的下拉選單
       document.querySelectorAll('.popup-menu.nav-menu').forEach(m => {
         if (m !== menu) m.classList.remove('show');
       });
 
-      // ✅ 切換當前 dropdown 顯示狀態
+      // 切換目前這個選單的顯示狀態
       menu.classList.toggle('show');
     });
   });
-
 
   // ❌ 點擊畫面任意區域時，自動關閉所有下拉選單
   document.addEventListener('click', () => {
