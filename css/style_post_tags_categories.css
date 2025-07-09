@@ -56,16 +56,23 @@
 }
 
 .post-links a {
-  display: inline-block;
-  padding: 1px 5px;
-  font-size: 15px;
-  border-radius: 2px;
-  background: #ff66a5;
-  color: white;
-  text-decoration: none;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  /* display: inline-block; */
+  /* padding: 1px 5px; */
+  /* font-size: 15px; */
+  /* border-radius: 2px; */
+  /* background: #ff66a5; */
+  /* color: white; */
+  /* text-decoration: none; */
+  /* box-shadow: 0 2px 5px rgba(0,0,0,0.15); */
   transition: all 0.1s ease;
   position: relative;
+  border-radius: 3px;
+  transform: translateY(-2px);
+  background-color: #f8f8f8; /* 淺灰色背景 */
+  padding: 0.2em 0.4em;
+  font-size: 15.8px;
+  color: #9233d6; /* 程式碼顏色 */
+  font-weight: 500;
 }
 
 .post-links a:hover {
