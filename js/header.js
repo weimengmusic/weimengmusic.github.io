@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // 🔽 綁定所有下拉選單按鈕的點擊事件
   menuButtons.forEach(button => {
     button.addEventListener('click', (event) => {
+      event.preventDefault();  // ⭐⭐新增這行
       event.stopPropagation(); // 阻止事件向上冒泡，避免觸發整頁關閉行為
 
       const menu = button.nextElementSibling; // 取得這個按鈕下方的對應選單（.popup-menu.nav-menu）
