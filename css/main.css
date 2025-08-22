@@ -306,6 +306,11 @@
 
     header .logo3_2{
       left: 50%;
+      opacity: 0;
+    }
+
+    header .logo3{
+      opacity: 0;
     }
     
     header img {

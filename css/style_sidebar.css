@@ -36,7 +36,7 @@
 #sidebar h2 {
   margin-top: 0;
   line-height: 1.0; /* 設定合適的行高，根據需要調整 */
-  color: #ff69b4; /* 粉色標題顏色 */
+  color: #f452a3; /* 粉色標題顏色 */
 }
 
 /* 關閉按鈕樣式 */
@@ -52,14 +52,14 @@
 }
 
 #close-btn:hover {
-  background: rgba(255, 105, 180, 0.7); /* 懸停時背景顏色 */
+  background: rgba(249, 118, 184, 0.7); /* 懸停時背景顏色 */
   color: #fff; /* 懸停時文字顏色 */
 }
 
 /* About 按鈕樣式 */
 .About a {
   text-decoration: none;
-  background: #fa91c6; /* 粉色背景 */
+  background: #fb51a6; /* 粉色背景 */
   color: #ffffff; /* 文字顏色 */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 增加陰影效果 */
   padding: 5px 10px;
@@ -68,7 +68,7 @@
 }
 
 .About a:hover {
-  background: #ff69b4; /* 懸停時背景顏色 */
+  background: #f01582; /* 懸停時背景顏色 */
   color: #ffffff; /* 懸停時文字顏色 */
 }
 

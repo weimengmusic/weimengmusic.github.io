@@ -1,4 +1,41 @@
 /* Header 樣式 */
+header { position: relative; }
+
+header::before,
+header::after {
+  content: "🩵 ❤️ 🧡";
+  position: absolute;
+  display: inline-block;
+  will-change: transform;
+  pointer-events: none;
+  opacity: 0.22;
+  font-size: clamp(16px, 2.2vw, 20px);
+  animation: floatHearts 14s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
+/* 左邊大約 25% */
+header::before { 
+  top: 50%; 
+  left: 25%; 
+}
+
+/* 右邊大約 75% */
+header::after  { 
+  top: 95%; 
+  left: 75%; 
+  animation-direction: alternate-reverse;
+}
+
+@keyframes floatHearts {
+  0%   { transform: translate(-50%, -50%) translateX(-60px) translateY(0) rotate(0deg); }
+  25%  { transform: translate(-50%, -50%) translateX(-30px) translateY(-16px) rotate(6deg); }
+  50%  { transform: translate(-50%, -50%) translateX(0)     translateY(-28px) rotate(0deg); }
+  75%  { transform: translate(-50%, -50%) translateX(30px)  translateY(-16px) rotate(-6deg); }
+  100% { transform: translate(-50%, -50%) translateX(60px)  translateY(0)     rotate(0deg); }
+}
+
+
 @keyframes gradientAnimation {
   0% { background-position: 0% 0%; }
   50% { background-position: 100% 100%; }
@@ -26,8 +63,9 @@ header .logo3 {
   height: auto; /* 自動調整高度以保持比例 */
   background-repeat: no-repeat;
   border-radius: 0; /* 確保不會變成圓形 */
-  opacity: 0; /* 初始不顯示 */
-  visibility: hidden; /* 初始不顯示 */
+  opacity: 0.75;
+  visibility: visible;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));
   transition: opacity 0.3s ease, visibility 0.3s ease; /* 添加過渡效果 */
 }
 
@@ -40,8 +78,9 @@ header .logo3_2 {
   height: auto; /* 自動調整高度以保持比例 */
   background-repeat: no-repeat;
   border-radius: 0; /* 確保不會變成圓形 */
-  opacity: 0; /* 初始不顯示 */
-  visibility: hidden; /* 初始不顯示 */
+  opacity: 0.5;
+  visibility: visible;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));
   transition: opacity 0.3s ease, visibility 0.3s ease; /* 添加過渡效果 */
 }
 
@@ -55,8 +94,9 @@ header .logo2 {
   height: auto; /* 自動調整高度以保持比例 */
   background-repeat: no-repeat;
   border-radius: 0; /* 確保不會變成圓形 */
-  opacity: 0; /* 初始不顯示 */
-  visibility: hidden; /* 初始不顯示 */
+  opacity: 0;
+  visibility: visible;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));
   transition: opacity 0.3s ease, visibility 0.3s ease, right 0.3s ease; /* 添加過渡效果 */
   z-index: 2;
   pointer-events: none; /* 讓圖片不攔截滑鼠事件 */
@@ -111,10 +151,10 @@ header h1:hover + .logo2{
 }
 
 header h1 a {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 3px 5px 8px rgba(0, 0, 0, 0.5);
   color: #fff; /* 标题的颜色 */
   text-decoration: none; /* 去除下劃線 */
-  font-size: 1.2em; /* 設定字體大小 */
+  font-size: 1.3em; /* 設定字體大小 */
   position: relative; /* 設定為相對定位，以便後面的絕對定位元素可以參考 */
   display: inline-block; /* 使元素可設置寬高，並允許 padding 和 margin 生效 */
   transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease; /* 設定顏色、變形和背景顏色的過渡效果 */
