@@ -82,12 +82,19 @@
 }
 
 .post-links a::after {
-  content: ' 💖';
+  /* content: '💖'; */
   opacity: 0;
   position: absolute;
   right: -1px;
-  top: -19px;
+  top: -34px;
   transition: opacity 0.1s ease;
+  
+  content: "";
+  background-image: url("/images/3.png");
+  background-size: contain; /* 讓圖片不變形 */
+  background-repeat: no-repeat;
+  width: 38px; /* 設定圖片寬度 */
+  height: 38px; /* 設定圖片高度 */
 }
 
 .post-links a:hover::after {
