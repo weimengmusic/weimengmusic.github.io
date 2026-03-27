@@ -123,26 +123,6 @@ body {
 }
 
 
-#angelShopBtn {
-  position: fixed;
-  right: 2px;
-  bottom: 70px; /* 比 scroll to top 再高一點 */
-  z-index: 9999;
-}
-
-#angelShopBtn img {
-  width: 90px;   /* 可自行調整大小 */
-  height: auto;
-  cursor: pointer;
-  transition: transform 0.25s ease, filter 0.25s ease;
-}
-
-#angelShopBtn img:hover {
-  transform: scale(1.1);
-  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.25));
-}
-
-
 
 /* 游標所在位置添加可愛的特效 */
 .cursor-effect {
