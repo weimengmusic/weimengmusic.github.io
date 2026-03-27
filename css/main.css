@@ -492,3 +492,8 @@
     background-color: rgba(255, 255, 255, 0.2);
   }
   
+ @media (max-width: 391px) {
+    header h1 {
+      font-size: 1.1em; /* 根據需要調整 */
+    }
+ }
