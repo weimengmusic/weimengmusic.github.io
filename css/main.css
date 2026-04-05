@@ -250,20 +250,7 @@
       display: block; /* 顯示 RWD logo */
     }
 
-    /* video-container */
-    vd_cont {
-      position: relative;
-      padding-bottom: 56.25%; /* 16:9 aspect ratio */
-      height: 0;
-      overflow: hidden;
-    }
-    
-    vd_cont iframe {
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
+
 
     
     .option {
@@ -277,6 +264,21 @@
       left: 75%; /* 可依標題長度微調位置 */
     }
 
+
+    .video-container iframe {
+      width: 80vh !important;
+      height: 30vh !important;
+      top: 50% !important;
+      left: 50% !important;
+      transform: translate(-50%, -50%) !important;
+      position: absolute !important;
+    }
+
+    .video-container {
+      height: 30vh;
+      overflow: hidden;
+      position: relative;
+    }
   }
   
   @media (max-width: 480px) {

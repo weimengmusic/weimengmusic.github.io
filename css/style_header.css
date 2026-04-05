@@ -221,14 +221,17 @@ nav {
 .nav-top li a{
   color: #fff;
   text-decoration: none;
-  font-size: clamp(1em, 1vw + 0.2em, 1.6em);       /* 根據螢幕寬度自動縮放 */
+  /* font-size: clamp(1em, 1vw + 0.2em, 1.6em);       根據螢幕寬度自動縮放 */
   background: none;
   border: none;
-  padding: clamp(8px, 0.1vw + 2px, 16px) clamp(10px, 1.2vw, 24px);
+  /* padding: clamp(8px, 0.1vw + 2px, 16px) clamp(10px, 1.2vw, 24px); */
   cursor: pointer;
   z-index: 2; 
   border-radius: 25px; /* 添加圓角，讓邊緣看起來更柔和 */
   position: relative; /* 加上定位，讓愛心可以絕對定位 */
+  font-size: clamp(13px, 2.8vw, 20px);
+  padding: clamp(6px, 0.8vw, 12px) 
+         clamp(10px, 1.6vw, 20px);
 }
 
 .nav-top li a:hover{
