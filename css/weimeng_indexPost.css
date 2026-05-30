@@ -362,3 +362,170 @@
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+/* 公告樣式 */
+/* 幸福公告 */
+.warm-news{
+  max-width:900px;
+  margin:20px auto;
+  padding:0 0px;
+}
+
+.warm-news-title{
+  text-align:center;
+
+  font-size:32px;
+
+  font-weight:600;
+
+  color:#705d66;
+
+  margin-bottom:20px;
+
+  letter-spacing:1px;
+}
+
+.warm-news-card{
+
+  background:#fffdfb;
+
+  border-radius:32px;
+
+  padding:35px;
+
+  border:1px solid #f3e7dd;
+
+  box-shadow:
+  0 10px 40px rgba(0,0,0,.04);
+}
+
+.warm-news-item{
+  display:flex;
+  align-items:flex-start;
+  gap:20px;
+}
+
+.warm-news-icon{
+  font-size:32px;
+  flex-shrink:0;
+}
+
+.warm-news-content h3{
+  margin:0 0 8px;
+
+  color:#5b4f57;
+
+  font-size:20px;
+}
+
+.warm-news-content p{
+  margin:0;
+
+  color:#7c6f76;
+
+  line-height:1.8;
+}
+
+.warm-news-content span{
+  display:block;
+
+  margin-top:10px;
+
+  color:#b7a5ad;
+
+  font-size:13px;
+}
+
+.warm-divider{
+  height:1px;
+
+  background:
+  linear-gradient(
+    to right,
+    transparent,
+    #efd9de,
+    transparent
+  );
+
+  margin:28px 0;
+}
+
+@media(max-width:768px){
+
+  .warm-news{
+      padding:0 15px;
+  }
+
+  .warm-news-card{
+      padding:25px;
+      border-radius:24px;
+  }
+
+  .warm-news-title{
+      font-size:24px;
+  }
+
+  .warm-news-item{
+      gap:15px;
+  }
+
+  .warm-news-icon{
+      font-size:26px;
+  }
+
+  .warm-news-content h3{
+      font-size:17px;
+  }
+
+  .warm-news-content p{
+      font-size:14px;
+  }
+
+}
+
+
+.warm-news-content a{
+  color:#c88aa1;
+
+  text-decoration:none;
+
+  font-weight:600;
+
+  position:relative;
+
+  transition:.25s;
+}
+
+.warm-news-content a::after{
+  content:"";
+
+  position:absolute;
+
+  left:0;
+  bottom:-2px;
+
+  width:100%;
+  height:1px;
+
+  background:#e7bccb;
+
+  transition:.25s;
+}
+
+.warm-news-content a:hover{
+  color:#b06f88;
+}
+
+.warm-news-content a:hover::after{
+  background:#b06f88;
+}
