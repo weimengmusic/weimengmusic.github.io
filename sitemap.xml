@@ -29,6 +29,24 @@
   </url>
   
   <url>
+    <loc>https://weimengmusic.com/about/index.html</loc>
+    
+    <lastmod>2026-06-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://weimengmusic.com/2025/%E5%B4%B4%E5%B4%B4%E4%BB%94%E5%AF%B6%E8%B2%9D/</loc>
+    
+    <lastmod>2026-06-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://weimengmusic.com/social/index.html</loc>
     
     <lastmod>2026-06-04</lastmod>
@@ -66,24 +84,6 @@
   
   <url>
     <loc>https://weimengmusic.com/product/index.html</loc>
-    
-    <lastmod>2026-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://weimengmusic.com/2025/%E5%B4%B4%E5%B4%B4%E4%BB%94%E5%AF%B6%E8%B2%9D/</loc>
-    
-    <lastmod>2026-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://weimengmusic.com/about/index.html</loc>
     
     <lastmod>2026-03-22</lastmod>
     
