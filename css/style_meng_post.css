@@ -10,7 +10,7 @@
 /* 📱 手機置中 */
 @media (max-width: 768px) {
   .article-box {
-    margin: 40px auto 0;
+    margin: 16px auto 0;
     padding: 0 10px;
   }
 }
