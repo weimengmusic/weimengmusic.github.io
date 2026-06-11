@@ -9,7 +9,6 @@
 
 @media (max-width: 768px){
   .post-date-inline{
-    font-size: 14px;
     margin: 0 0 -15px 0px;
     font-weight: bold;
   }
