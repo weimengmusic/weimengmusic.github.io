@@ -1,4 +1,56 @@
+/* 上下一篇按鈕 */
+
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+/* 👇 重點：固定寬度，不撐滿 */
+.post-nav a {
+  width: calc(50% - 6px); /* 兩個時剛好一人一半 */
+  padding: 15px;
+  background: #fff7fa;
+  border: 2px dashed #ffb6d5;
+  border-radius: 14px;
+  text-decoration: none;
+  color: #d63384;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+/* hover */
+.post-nav a:hover {
+  background: #ffe8f2;
+  transform: translateY(-2px);
+}
+
+/* 文字對齊 */
+.post-nav-prev {
+  text-align: left;
+}
+
+.post-nav-next {
+  text-align: right;
+}
+
+/* 標題樣式 */
+.post-nav a div:first-child {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 5px;
+}
+
+.post-nav a div:last-child {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
 /* 以下是孟寶寶的幸福程式 */
+
 
 .article-box {
   max-width: 585px;

@@ -10,7 +10,7 @@
   transition: left 0.3s ease; /* 只改變 left 屬性，保持動畫平滑 */
   padding-top: 10px;
   z-index: 1000; /* 確保側邊欄在最上層 */
-  overflow-y: auto; /* 垂直方向顯示滾動條 */
+  overflow-y: scroll; /* 垂直方向顯示滾動條 */
   overflow-x: hidden;
   color: #70063b; /* 粉色標題顏色 */
 }
