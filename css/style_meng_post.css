@@ -3,13 +3,14 @@
 .post-date-inline{
  color: #898888;;  /* ← 你可以換顏色 */
  display: block;
+ font-size: 17px;
  margin: 0 0 -8px 0px;
 }
 
 @media (max-width: 768px){
   .post-date-inline{
+    font-size: 14px;
     margin: 0 0 -15px 0px;
-    font-size: 16px;
     font-weight: bold;
   }
 }
