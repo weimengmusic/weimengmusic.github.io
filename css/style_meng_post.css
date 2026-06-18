@@ -78,7 +78,8 @@
 
 .article-box {
   max-width: 585px;
-  margin: 30px 0 0 80px;
+  /* margin: 30px 0 0 80px; */
+  margin: 30px auto 0;
   font-size: 18px;
   letter-spacing: 0.4px;
 }
@@ -92,7 +93,7 @@
 }
 
 .article-box p {
-  margin-bottom: 1.3em !important;
+  margin-bottom: 1.7em !important;
 }
 
 /* 以上是孟寶寶的幸福程式 */
@@ -124,7 +125,8 @@
   margin-top: 0em; /* 調整標題與上方內容的距離 */
   margin-bottom: 0.1em; /* 調整標題與下方內容的距離 */
   color: #222;
-  text-align: left; /* 標題左對齊 */
+  margin-left: 0.1em;
+  /* text-align: left; 標題左對齊 */
   padding: 5px;
 }
 
@@ -147,14 +149,14 @@
 }
 
 .post h3 {
-  margin-top: 1em; /* 調整標題與上方內容的距離 */
-  margin-bottom: 0.1em; /* 調整標題與下方內容的距離 */
+  margin-top: 1.6em; /* 調整標題與上方內容的距離 */
+  margin-bottom: 1.2em; /* 調整標題與下方內容的距離 */
 }
 
 /* 文章信息區 */
 .post p {
   margin: 10px 0;
-  line-height: 1.7; /* 提升行間距以增強可讀性 */
+  line-height: 1.9; /* 提升行間距以增強可讀性 */
 }
 
 /* 摘要區,日期,作者 */
