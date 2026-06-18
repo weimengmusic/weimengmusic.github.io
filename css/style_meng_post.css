@@ -255,7 +255,7 @@ pre code {
   background: transparent; /* 使內部程式碼塊背景透明 */
   color: inherit; /* 繼承父元素的顏色 */
   display: block; /* 使 code 區塊在 pre 區塊中顯示為塊級元素 */
-  margin: 0; /* 移除默認邊距 */
+  margin: 4px 10px;
   padding: 0; /* 移除默認內邊距 */
   font-weight: normal; /* 將多行程式碼設置為正常字體 */
 }
