@@ -1,3 +1,15 @@
+/* <!-- 直圖片 --> */
+
+.sheet-image{
+  width:43%;
+}
+
+@media (max-width:768px){
+  .sheet-image{
+    width:100%;
+  }
+}
+
 /* <!-- 橫影片 --> */
 
 .video-16-9 {
