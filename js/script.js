@@ -29,12 +29,11 @@ document.addEventListener('mousemove', function(e) {
   // 檢查滑鼠是否在滾動條範圍內
   const isOverScrollbar = (e.pageX > window.innerWidth - scrollbarWidth - 50);
 
-  console.log(window.innerHeight - e.pageY)
   if (isOverScrollbar) {
     cursorEffect.style.opacity = 0; // 隱藏特效
   } else {
-    cursorEffect.style.left = (e.pageX -25) + 'px'; // 向右偏移 3 像素
-    cursorEffect.style.top = (e.pageY -35) + 'px'; // 向下偏移 10 像素
+    cursorEffect.style.left = (e.clientX - 25) + 'px';
+    cursorEffect.style.top = (e.clientY - 35) + 'px';
     cursorEffect.style.opacity = 1; // 顯示特效
   }
 });

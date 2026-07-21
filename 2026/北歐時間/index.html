@@ -390,5 +390,34 @@
   <!-- 返回頂部按鈕 -->
   <button id="scroll-to-top-btn" class="scroll-to-top-btn">▲</button>
   
+  <!-- 滑鼠光圈 -->
+<div id="cursor-effect" class="cursor-effect"></div>
+
+<script>
+window.addEventListener('load', function () {
+
+  const cursorEffect = document.getElementById('cursor-effect');
+
+  if (!cursorEffect) return;
+
+
+  // 偵測所有影片 iframe
+  document.querySelectorAll('iframe').forEach(function(iframe) {
+
+    iframe.addEventListener('mouseenter', function() {
+      cursorEffect.classList.add('hide-cursor-effect');
+    });
+
+
+    iframe.addEventListener('mouseleave', function() {
+      cursorEffect.classList.remove('hide-cursor-effect');
+    });
+
+  });
+
+});
+</script>
+  
+
 </body>
 </html>
