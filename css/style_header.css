@@ -155,7 +155,9 @@ header h1 a {
   text-shadow: 3px 5px 8px rgba(0, 0, 0, 0.5);
   color: #fff; /* 标题的颜色 */
   text-decoration: none; /* 去除下劃線 */
-  font-size: 1.3em; /* 設定字體大小 */
+  /* font-size: 1.3em; 設定字體大小 */
+  font-size: clamp(20px, 4vw, 42px);
+  white-space: nowrap; /* 不換行 /*
   position: relative; /* 設定為相對定位，以便後面的絕對定位元素可以參考 */
   display: inline-block; /* 使元素可設置寬高，並允許 padding 和 margin 生效 */
   transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease; /* 設定顏色、變形和背景顏色的過渡效果 */

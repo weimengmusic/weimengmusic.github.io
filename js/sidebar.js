@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // 檢查是否在桌面模式
     function isDesktop() {
-        return window.innerWidth >= 768;
+        return window.innerWidth >= 760;
     }
 
     function updateLayout() {
