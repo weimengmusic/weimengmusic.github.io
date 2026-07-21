@@ -17,7 +17,71 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-// cursor 滑鼠 / 手機觸控特效
+
+
+
+// //cursor滑鼠的特效
+// document.addEventListener('mousemove', function(e) {
+//   const cursorEffect = document.getElementById('cursor-effect');
+//   const scrollbarWidth = 12; // 根據你的滾動條寬度設置
+//   const proximityToBottom = 0; // 接近底部的距離閾值
+
+//   // 檢查滑鼠是否在滾動條範圍內
+//   const isOverScrollbar = (e.pageX > window.innerWidth - scrollbarWidth - 50);
+
+//   if (isOverScrollbar) {
+//     cursorEffect.style.opacity = 0; // 隱藏特效
+//   } else {
+//     cursorEffect.style.left = (e.clientX - 25) + 'px';
+//     cursorEffect.style.top = (e.clientY - 35) + 'px';
+//     cursorEffect.style.opacity = 1; // 顯示特效
+//   }
+// });
+
+// // 當滑鼠移開時隱藏特效
+// document.addEventListener('mouseleave', function() {
+//   const cursorEffect = document.getElementById('cursor-effect');
+//   cursorEffect.style.opacity = 0; // 隱藏特效
+// });
+
+// // 手機觸控後，1秒隱藏光圈
+// let touchTimer;
+
+// document.addEventListener('touchstart', function () {
+
+//   const cursorEffect = document.getElementById('cursor-effect');
+//   if (!cursorEffect) return;
+
+//   // 顯示光圈
+//   cursorEffect.style.opacity = 1;
+
+//   // 清除上一個計時
+//   clearTimeout(touchTimer);
+
+//   // 1秒後隱藏
+//   touchTimer = setTimeout(function () {
+//     cursorEffect.style.opacity = 0;
+//   }, 820);
+
+// });
+
+// if (!('ontouchstart' in window)) {
+
+//   document.addEventListener('mousemove', function(e) {
+
+//     const cursorEffect = document.getElementById('cursor-effect');
+//     if (!cursorEffect) return;
+
+//     cursorEffect.style.left = (e.clientX - 25) + 'px';
+//     cursorEffect.style.top = (e.clientY - 35) + 'px';
+//     cursorEffect.style.opacity = 1;
+
+//   });
+
+// }
+
+// cursor 光圈效果（桌機 / 手機分開）
+
 document.addEventListener('DOMContentLoaded', function () {
 
   const cursorEffect = document.getElementById('cursor-effect');
@@ -25,101 +89,97 @@ document.addEventListener('DOMContentLoaded', function () {
   if (!cursorEffect) return;
 
 
-  let touchTimer;
-  let isMoving = false;
+  // 判斷裝置
+  const isTouchDevice = window.matchMedia('(pointer: coarse)').matches;
 
 
-  // =====================
-  // 電腦滑鼠
-  // =====================
-  document.addEventListener('mousemove', function (e) {
+  // =============================
+  // 📱 手機版（觸控）
+  // =============================
+  if (isTouchDevice) {
 
-    cursorEffect.style.left = (e.clientX - 25) + 'px';
-    cursorEffect.style.top = (e.clientY - 35) + 'px';
-    cursorEffect.style.opacity = 1;
-
-  });
+    let touchTimer;
 
 
-  // =====================
-  // 手機觸控開始
-  // =====================
-  document.addEventListener('touchstart', function (e) {
+    // 點擊出現
+    document.addEventListener('touchstart', function (e) {
 
-    const touch = e.touches[0];
-
-    isMoving = false;
-
-    clearTimeout(touchTimer);
-
-    cursorEffect.style.left = (touch.clientX - 25) + 'px';
-    cursorEffect.style.top = (touch.clientY - 35) + 'px';
-    cursorEffect.style.opacity = 1;
+      const touch = e.touches[0];
 
 
-    // 單點後 0.82 秒消失
-    touchTimer = setTimeout(function () {
-
-      if (!isMoving) {
-        cursorEffect.style.opacity = 0;
-      }
-
-    }, 820);
-
-  });
+      clearTimeout(touchTimer);
 
 
-  // =====================
-  // 手機滑動跟隨
-  // =====================
-  document.addEventListener('touchmove', function (e) {
-
-    const touch = e.touches[0];
-
-    isMoving = true;
-
-    clearTimeout(touchTimer);
-
-    cursorEffect.style.left = (touch.clientX - 25) + 'px';
-    cursorEffect.style.top = (touch.clientY - 35) + 'px';
-    cursorEffect.style.opacity = 1;
-
-  });
+      cursorEffect.style.left = (touch.clientX - 25) + 'px';
+      cursorEffect.style.top = (touch.clientY - 35) + 'px';
+      cursorEffect.style.opacity = '1';
 
 
-  // =====================
-  // 手指離開
-  // =====================
-  document.addEventListener('touchend', function () {
-
-    clearTimeout(touchTimer);
-
-    // 如果是滑動，放開立即消失
-    if (isMoving) {
-
-      cursorEffect.style.opacity = 0;
-
-    } 
-    // 如果只是點擊，維持倒數消失
-    else {
-
+      // 0.82 秒後消失
       touchTimer = setTimeout(function () {
-        cursorEffect.style.opacity = 0;
+
+        cursorEffect.style.opacity = '0';
+
       }, 820);
 
-    }
 
-  });
+    }, { passive: true });
 
 
-  // =====================
-  // 滑鼠離開頁面
-  // =====================
-  document.addEventListener('mouseleave', function () {
 
-    cursorEffect.style.opacity = 0;
+    // 滑動時完全不要光圈
+    document.addEventListener('touchmove', function () {
 
-  });
+      clearTimeout(touchTimer);
+
+      cursorEffect.style.opacity = '0';
+
+
+    }, { passive: true });
+
+
+
+    // 手指離開
+    document.addEventListener('touchend', function () {
+
+      clearTimeout(touchTimer);
+
+      cursorEffect.style.opacity = '0';
+
+    });
+
+
+  }
+
+
+
+  // =============================
+  // 🖱 桌機版（滑鼠）
+  // =============================
+  else {
+
+
+    document.addEventListener('mousemove', function (e) {
+
+
+      cursorEffect.style.left = (e.clientX - 25) + 'px';
+      cursorEffect.style.top = (e.clientY - 35) + 'px';
+      cursorEffect.style.opacity = '1';
+
+
+    });
+
+
+
+    // 滑鼠離開瀏覽器
+    document.addEventListener('mouseleave', function () {
+
+      cursorEffect.style.opacity = '0';
+
+    });
+
+
+  }
 
 
 });
