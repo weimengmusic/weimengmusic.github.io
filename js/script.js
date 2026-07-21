@@ -43,3 +43,39 @@ document.addEventListener('mouseleave', function() {
   const cursorEffect = document.getElementById('cursor-effect');
   cursorEffect.style.opacity = 0; // 隱藏特效
 });
+
+// 手機觸控後，1秒隱藏光圈
+let touchTimer;
+
+document.addEventListener('touchstart', function () {
+
+  const cursorEffect = document.getElementById('cursor-effect');
+  if (!cursorEffect) return;
+
+  // 顯示光圈
+  cursorEffect.style.opacity = 1;
+
+  // 清除上一個計時
+  clearTimeout(touchTimer);
+
+  // 1秒後隱藏
+  touchTimer = setTimeout(function () {
+    cursorEffect.style.opacity = 0;
+  }, 820);
+
+});
+
+if (!('ontouchstart' in window)) {
+
+  document.addEventListener('mousemove', function(e) {
+
+    const cursorEffect = document.getElementById('cursor-effect');
+    if (!cursorEffect) return;
+
+    cursorEffect.style.left = (e.clientX - 25) + 'px';
+    cursorEffect.style.top = (e.clientY - 35) + 'px';
+    cursorEffect.style.opacity = 1;
+
+  });
+
+}
