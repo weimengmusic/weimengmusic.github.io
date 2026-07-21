@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://weimengmusic.com/about/index.html</loc>
+    
+    <lastmod>2026-07-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://weimengmusic.com/products/index%20copy.html</loc>
     
     <lastmod>2026-07-21</lastmod>
@@ -165,15 +174,6 @@
   
   <url>
     <loc>https://weimengmusic.com/2025/%E5%B9%AB%E5%B4%B4%E5%AD%9F%E6%8F%9B%E5%8F%AF%E6%84%9B%E5%B9%B8%E7%A6%8F%E9%A0%AD%E8%B2%BC%E6%95%99%E5%AD%B8/</loc>
-    
-    <lastmod>2026-06-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://weimengmusic.com/about/index.html</loc>
     
     <lastmod>2026-06-19</lastmod>
     
