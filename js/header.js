@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // 建立圖片元素
     const img = document.createElement('img');
     img.src = '/images/3.png'; // 愛心圖片路徑（可自訂）
-    img.style.position = 'absolute';
+    img.style.position = 'fixed';
     img.style.left = `${x - 25}px`; // 將圖片置中顯示在點擊位置
     img.style.top = `${y - 25}px`;
     img.style.width = '50px';

@@ -57,10 +57,10 @@ document.querySelectorAll('.carousel-img').forEach(img => {
   img.setAttribute('draggable', 'false');
 });
 
-// 全區禁用右鍵（可只針對圖片也行）
-document.addEventListener('contextmenu', function (e) {
-  if (e.target.closest('.carousel-img')) {
-    e.preventDefault();
-  }
-});
+// // 全區禁用右鍵（可只針對圖片也行）
+// document.addEventListener('contextmenu', function (e) {
+//   if (e.target.closest('.carousel-img')) {
+//     e.preventDefault();
+//   }
+// });
 
