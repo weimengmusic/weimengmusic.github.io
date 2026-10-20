@@ -167,14 +167,143 @@
 
 <!-- index.ejs -->
 
-<iframe
+<!-- <iframe
   class="video-mobile-169"
   width="100%"
   height="380"
-  src="https://www.youtube.com/embed/nhos55B1jec"
+  src="https://r2.uploads.tw/2026/10/gcMNSPh2Pb.mp4"
   frameborder="0"
   allowfullscreen>
-</iframe>
+</iframe> -->
+
+<style>
+/* ==========================================
+影片卡片｜保留圓角、陰影、懸浮效果
+同時支援 iframe 與 video
+========================================== */
+
+.wm-video {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 780px;
+  margin: 42px auto 0;
+  padding: 12px;
+  box-sizing: border-box;
+
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.98);
+  border-radius: 24px;
+
+  box-shadow:
+    0 18px 45px rgba(90, 65, 50, 0.10),
+    0 4px 15px rgba(220, 160, 130, 0.15);
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.wm-video:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 25px 55px rgba(90, 65, 50, 0.15),
+    0 0 25px rgba(240, 180, 150, 0.35);
+}
+
+/* 影片本體：統一圓角與比例 */
+.wm-video iframe,
+.wm-video video {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* 原生影片維持自動高度與等比例 */
+.wm-video video {
+  height: auto;
+  object-fit: contain;
+  background: #000;
+}
+
+/* ==========================================
+RWD 手機版
+========================================== */
+
+@media (max-width: 767px) {
+  .wm-store {
+    padding: 48px 20px 45px;
+    border-radius: 25px;
+  }
+
+  .wm-store h2 {
+    font-size: 29px !important;
+    letter-spacing: 1.5px;
+  }
+
+  .wm-line {
+    width: 120px;
+    margin-bottom: 20px;
+  }
+
+  .wm-store-text {
+    font-size: 15px;
+    line-height: 1.9;
+  }
+
+  .wm-video {
+    margin-top: 30px;
+    padding: 8px;
+    border-radius: 18px;
+  }
+
+  .wm-video iframe,
+  .wm-video video {
+    border-radius: 12px;
+  }
+
+  .wm-deco-1 {
+    left: 4%;
+    top: 35px;
+    font-size: 22px;
+  }
+
+  .wm-deco-2 {
+    right: 4%;
+    top: 70px;
+    font-size: 18px;
+  }
+
+  .wm-deco-3 {
+    left: 5%;
+    bottom: 35px;
+    font-size: 20px;
+  }
+
+  .wm-deco-4 {
+    right: 6%;
+    bottom: 38px;
+    font-size: 22px;
+  }
+}
+</style>
+
+  <!-- MP4 原生播放器：自動播放、循環播放、保留控制按鈕 -->
+  <div class="wm-video">
+    <video
+      src="https://r2.uploads.tw/2026/10/gcMNSPh2Pb.mp4"
+      title="崴孟的數位商店"
+      preload="metadata"
+      loop
+      playsinline
+      controls
+    ></video>
+  </div>
 
 <!-- 💌 幸福公告 -->
 
